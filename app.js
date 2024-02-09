@@ -1,3 +1,4 @@
+require('dotenv').config();
 const path = require('path');
 const bodyParser = require('body-parser');
 const express = require('express');
@@ -51,8 +52,9 @@ app.use((error, req, res, next) => {
     res.status(status).json({ message: message });
   });
   
-mongoose.connect('mongodb+srv://mhhabibrex:JdgfcaH5KmEsEKcw@textanalyzer.2d0t32g.mongodb.net/tattools?retryWrites=true&w=majority')
-.then(result => {
-    app.listen(8080);
-  })
-  .catch(err => console.log("port is not running"));
+mongoose.connect(process.env.MONGODB_URI)
+    .then(result => {
+        app.listen(process.env.PORT);
+        console.log("Database connection succesfull and port is running...")
+    })
+    .catch(err => console.log("port is not running"));
