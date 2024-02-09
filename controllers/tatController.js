@@ -21,7 +21,8 @@ exports.createNewFile=(req, res, next)=>{
         error.statusCode = 422;
         throw error;
     }
-    const textUrl=req.file.path;
+    const textUrl=req.file.path
+    console.log(req.file)
     const title = req.body.title;
     const content = req.body.content;
     const textfile = new Textfile({
@@ -38,7 +39,10 @@ exports.createNewFile=(req, res, next)=>{
       });
     })
     .catch(err => {
-      console.log(err);
+        if (!err.statusCode) {
+            err.statusCode = 500;
+        }
+        next(err);
     });
 }
 
