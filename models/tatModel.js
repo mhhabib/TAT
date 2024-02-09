@@ -1,7 +1,7 @@
 const mongoose=require('mongoose')
 const Schema=mongoose.Schema;
 
-const postSchema=new Schema({
+const fileSchema=new Schema({
     title:{
         type: String,
         required: true
@@ -16,4 +16,4 @@ const postSchema=new Schema({
     }
 }, {timestamps: true});
 
-module.exports = mongoose.model('Post', postSchema)
+module.exports = mongoose.model('Textfile', fileSchema)

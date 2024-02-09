@@ -7,7 +7,6 @@ const app = express();
 const rootDir = require("./Utils/path")
 const feedRoutes=require('./routes/feedRoutes')
 
-// const mongoConnect=require('./Utils/databaseConnection')
 
 app.set("view engine", "ejs");
 app.set("views", "views");
@@ -20,10 +19,19 @@ const fileStorage = multer.diskStorage({
         cb(null, new Date().toISOString()+'-'+file.originalname);
     }
 })
-
+const fileFilter = (req, file, cb)=>{
+    if(file.mimetype === 'text/plain'){
+        cb(null, true)
+    }
+    else{
+        cb(null, false)
+    }
+}
 app.use(bodyParser.json());
+app.use(multer({ storage: fileStorage, fileFilter: fileFilter }).single('text'));
 app.use(express.static(path.join(rootDir, "public")));
 app.use('/files', express.static(path.join(__dirname, "files")));
+
 app.use((req, res, next)=>{
     res.setHeader('Acess-Control-Allow-Origin', '*');
     res.setHeader('Acess-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
@@ -32,9 +40,9 @@ app.use((req, res, next)=>{
 })
 app.use(feedRoutes)
 
-mongoose.connect('mongodb+srv://mhhabibrex:JdgfcaH5KmEsEKcw@textanalyzer.2d0t32g.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://mhhabibrex:JdgfcaH5KmEsEKcw@textanalyzer.2d0t32g.mongodb.net/test?retryWrites=true&w=majority')
 .then(result=>{
-    console.log()
+    console.log(result)
     app.listen(3000)
 })
 .catch(err=> console.log(err))
