@@ -1,0 +1,30 @@
+2024-02-10T11:07:16.662Z [info] : Database connection succesfull and port is running...
+2024-02-10T11:07:28.799Z [info] : Analyzing imported text file....
+2024-02-10T11:07:28.800Z [info] : New text analyzing is sucessfull!
+2024-02-10T11:07:28.800Z [info] : New file creation API time: 1.486957999999504 milliseconds
+2024-02-10T11:07:28.802Z [info] : Text analysis successful.
+2024-02-10T11:07:28.866Z [info] : Successfully created new file and stored to database
+2024-02-10T11:07:28.875Z [info] : Fetching all published files API time: 1.1748330000009446 milliseconds
+2024-02-10T11:07:28.923Z [info] : Fetching all published file
+2024-02-10T11:07:28.925Z [info] : Fetching all published file successfull!
+2024-02-10T11:07:34.963Z [info] : Fetching words count API time: 0.5106660000019474 milliseconds
+2024-02-10T11:07:35.039Z [info] : Fetching words id: 65c758f042c05e3445cb0f5f.
+2024-02-10T11:07:35.040Z [info] : Fetching words successfull!
+2024-02-10T11:07:37.003Z [info] : Fetching characters count API time: 0.5990419999980077 milliseconds
+2024-02-10T11:07:37.046Z [info] : Fetching characters id: 65c758f042c05e3445cb0f5f.
+2024-02-10T11:07:37.047Z [info] : Fetching characters successfull!
+2024-02-10T11:07:38.046Z [info] : Fetching sentences count API time: 0.3507920000010927 milliseconds
+2024-02-10T11:07:38.092Z [info] : Fetching sentences id: 65c758f042c05e3445cb0f5f.
+2024-02-10T11:07:38.094Z [info] : Fetching sentences successfull!
+2024-02-10T11:07:39.025Z [info] : Fetching paragraphs count API time: 0.6709999999984575 milliseconds
+2024-02-10T11:07:39.086Z [info] : Fetching paragraphs id: 65c758f042c05e3445cb0f5f.
+2024-02-10T11:07:39.087Z [info] : Fetching paragraphs successfull!
+2024-02-10T11:07:39.984Z [info] : Fetching longest words API time: 0.31687500000043656 milliseconds
+2024-02-10T11:07:40.040Z [info] : Fetching longest words id: 65c758f042c05e3445cb0f5f.
+2024-02-10T11:07:40.041Z [info] : Fetching longest words successfull!
+2024-02-10T11:07:41.810Z [info] : Deleting file API time: 0.21600000000034925 milliseconds
+2024-02-10T11:07:41.905Z [info] : Deleted file id: 65c746a33a5dd7111ea36f46.
+2024-02-10T11:07:41.907Z [info] : File deleted successfully!
+2024-02-10T11:07:41.924Z [info] : Fetching all published files API time: 0.7703330000003916 milliseconds
+2024-02-10T11:07:41.975Z [info] : Fetching all published file
+2024-02-10T11:07:41.977Z [info] : Fetching all published file successfull!
