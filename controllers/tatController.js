@@ -1,5 +1,5 @@
 const Textfile = require("../models/tatModel")
-const Textanalyzestatics = require('../Utils/textAnalyze')
+const processFile = require('../Utils/processTextFile')
 const { performance } = require('perf_hooks');
 const logger = require("../logger/Logger");
 
@@ -37,9 +37,9 @@ exports.createNewFile=(req, res, next)=>{
     }
     const textUrl=req.file.path
     logger.info("Analyzing imported text file....")
-    Textanalyzestatics(textUrl, (err, statistics) => {
+    processFile(textUrl, (err, statistics) => {
         if (err) {
-            console.error(err);
+            logger.error(`File processing went wrong: ${err}`);
             return next(err);
         }
         const textfile = new Textfile({
@@ -48,7 +48,7 @@ exports.createNewFile=(req, res, next)=>{
             characters: statistics?.charCount?.toString(),
             sentences: statistics?.sentenceCount?.toString(),
             paragraphs: statistics?.paragraphCount?.toString(),
-            longestparagraphs: statistics?.longestWordsInParagraphs?.toString()
+            longestparagraphs: statistics?.longestWord
         });
         textfile
         .save()

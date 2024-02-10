@@ -27,3 +27,805 @@
 2024-02-10T06:48:02.879Z [info] : Database connection succesfull and port is running...
 2024-02-10T06:56:25.818Z [info] : Database connection succesfull and port is running...
 2024-02-10T07:05:00.154Z [info] : Database connection succesfull and port is running...
+2024-02-10T08:13:16.920Z [info] : Database connection succesfull and port is running...
+2024-02-10T08:13:23.354Z [info] : Fetching all published files API time: 1.3243750000001455 milliseconds
+2024-02-10T08:13:23.407Z [info] : Fetching all published file
+2024-02-10T08:13:23.410Z [info] : Fetching all published file successfull!
+2024-02-10T08:13:23.411Z [info] : Fetching all published files API time: 0.1305419999998776 milliseconds
+2024-02-10T08:13:23.455Z [info] : Fetching all published file
+2024-02-10T08:13:23.457Z [info] : Fetching all published file successfull!
+2024-02-10T08:13:25.930Z [info] : Fetching longest paragraphs API time: 0.38816700000097626 milliseconds
+2024-02-10T08:13:26.019Z [info] : Fetching longest paragraphs id: 65c710a57c1bd30635b1f55e.
+2024-02-10T08:13:26.023Z [info] : Fetching longest paragraphs successfull!
+2024-02-10T08:13:28.805Z [info] : Deleting file API time: 0.23458300000129384 milliseconds
+2024-02-10T08:13:28.915Z [info] : Deleted file id: 65c710a57c1bd30635b1f55e.
+2024-02-10T08:13:28.916Z [info] : File deleted successfully!
+2024-02-10T08:13:28.934Z [info] : Fetching all published files API time: 0.36820799999986775 milliseconds
+2024-02-10T08:13:28.983Z [info] : Fetching all published file
+2024-02-10T08:13:28.985Z [info] : Fetching all published file successfull!
+2024-02-10T08:13:29.693Z [info] : Deleting file API time: 0.1373749999984284 milliseconds
+2024-02-10T08:13:29.793Z [info] : Deleted file id: 65c710f19471c1cbc325c2ed.
+2024-02-10T08:13:29.794Z [info] : File deleted successfully!
+2024-02-10T08:13:29.798Z [info] : Fetching all published files API time: 0.30783299999893643 milliseconds
+2024-02-10T08:13:29.844Z [info] : Fetching all published file
+2024-02-10T08:13:29.846Z [info] : Fetching all published file successfull!
+2024-02-10T08:13:30.460Z [info] : Deleting file API time: 0.4967080000005808 milliseconds
+2024-02-10T08:13:30.566Z [info] : Deleted file id: 65c719258c0ef3e56efe9d3c.
+2024-02-10T08:13:30.568Z [info] : File deleted successfully!
+2024-02-10T08:13:30.575Z [info] : Fetching all published files API time: 0.20612500000061118 milliseconds
+2024-02-10T08:13:30.618Z [info] : Fetching all published file
+2024-02-10T08:13:30.620Z [info] : Fetching all published file successfull!
+2024-02-10T08:13:35.299Z [info] : Analyzing imported text file....
+2024-02-10T08:13:35.301Z [info] : New text analyzing is sucessfull!
+2024-02-10T08:13:35.301Z [info] : New file creation API time: 1.354416999998648 milliseconds
+2024-02-10T08:13:35.365Z [info] : Successfully created new file and stored to database
+2024-02-10T08:13:35.380Z [info] : Fetching all published files API time: 0.19433399999979883 milliseconds
+2024-02-10T08:13:35.422Z [info] : Fetching all published file
+2024-02-10T08:13:35.424Z [info] : Fetching all published file successfull!
+2024-02-10T08:13:37.885Z [info] : Fetching longest paragraphs API time: 0.2772079999995185 milliseconds
+2024-02-10T08:13:37.938Z [info] : Fetching longest paragraphs id: 65c7302f180e02398bf88aae.
+2024-02-10T08:13:37.939Z [info] : Fetching longest paragraphs successfull!
+2024-02-10T08:14:03.007Z [info] : Fetching all published files API time: 0.24658300000010058 milliseconds
+2024-02-10T08:14:03.048Z [info] : Fetching all published file
+2024-02-10T08:14:03.048Z [info] : Fetching all published file successfull!
+2024-02-10T08:14:07.261Z [info] : Fetching all published files API time: 0.06716600000072503 milliseconds
+2024-02-10T08:14:07.303Z [info] : Fetching all published file
+2024-02-10T08:14:07.304Z [info] : Fetching all published file successfull!
+2024-02-10T08:14:07.305Z [info] : Fetching all published files API time: 0.10045800000079907 milliseconds
+2024-02-10T08:14:07.345Z [info] : Fetching all published file
+2024-02-10T08:14:07.346Z [info] : Fetching all published file successfull!
+2024-02-10T08:14:14.958Z [info] : Fetching longest paragraphs API time: 0.2414169999974547 milliseconds
+2024-02-10T08:14:15.014Z [info] : Fetching longest paragraphs id: 65c7302f180e02398bf88aae.
+2024-02-10T08:14:15.015Z [info] : Fetching longest paragraphs successfull!
+2024-02-10T08:14:17.401Z [info] : Fetching paragraphs count API time: 0.19320900000457186 milliseconds
+2024-02-10T08:14:17.444Z [info] : Fetching paragraphs id: 65c7302f180e02398bf88aae.
+2024-02-10T08:14:17.445Z [info] : Fetching paragraphs successfull!
+2024-02-10T08:14:18.792Z [info] : Fetching sentences count API time: 0.21962499999790452 milliseconds
+2024-02-10T08:14:18.844Z [info] : Fetching sentences id: 65c7302f180e02398bf88aae.
+2024-02-10T08:14:18.845Z [info] : Fetching sentences successfull!
+2024-02-10T08:14:19.828Z [info] : Fetching characters count API time: 0.28012499999749707 milliseconds
+2024-02-10T08:14:19.872Z [info] : Fetching characters id: 65c7302f180e02398bf88aae.
+2024-02-10T08:14:19.873Z [info] : Fetching characters successfull!
+2024-02-10T08:14:20.997Z [info] : Fetching words count API time: 0.12483300000167219 milliseconds
+2024-02-10T08:14:21.045Z [info] : Fetching words id: 65c7302f180e02398bf88aae.
+2024-02-10T08:14:21.045Z [info] : Fetching words successfull!
+2024-02-10T08:15:48.354Z [info] : Database connection succesfull and port is running...
+2024-02-10T08:19:11.103Z [info] : Database connection succesfull and port is running...
+2024-02-10T08:20:02.094Z [info] : Database connection succesfull and port is running...
+2024-02-10T08:20:44.272Z [info] : Database connection succesfull and port is running...
+2024-02-10T08:20:54.129Z [info] : Fetching all published files API time: 1.189249999999447 milliseconds
+2024-02-10T08:20:54.192Z [info] : Fetching all published file
+2024-02-10T08:20:54.192Z [info] : Fetching all published file successfull!
+2024-02-10T08:20:54.193Z [info] : Fetching all published files API time: 0.09070900000006077 milliseconds
+2024-02-10T08:20:54.254Z [info] : Fetching all published file
+2024-02-10T08:20:54.255Z [info] : Fetching all published file successfull!
+2024-02-10T08:21:00.791Z [info] : Analyzing imported text file....
+2024-02-10T08:21:59.783Z [info] : Database connection succesfull and port is running...
+2024-02-10T08:22:03.747Z [info] : Fetching all published files API time: 1.5015419999999722 milliseconds
+2024-02-10T08:22:03.809Z [info] : Fetching all published file
+2024-02-10T08:22:03.811Z [info] : Fetching all published file successfull!
+2024-02-10T08:22:03.811Z [info] : Fetching all published files API time: 0.09033300000010058 milliseconds
+2024-02-10T08:22:03.854Z [info] : Fetching all published file
+2024-02-10T08:22:03.855Z [info] : Fetching all published file successfull!
+2024-02-10T08:22:08.894Z [info] : Analyzing imported text file....
+2024-02-10T08:22:08.897Z [info] : New text analyzing is sucessfull!
+2024-02-10T08:22:08.898Z [info] : New file creation API time: 4.040624999999636 milliseconds
+2024-02-10T08:22:08.901Z [info] : Word count: 180
+2024-02-10T08:22:08.901Z [info] : Character count: 1050
+2024-02-10T08:22:08.901Z [info] : sentence count: 23
+2024-02-10T08:22:08.901Z [info] : paragraph count: 3
+2024-02-10T08:22:08.901Z [info] : Longest word : NaN
+2024-02-10T08:22:08.975Z [info] : Successfully created new file and stored to database
+2024-02-10T08:22:08.989Z [info] : Fetching all published files API time: 0.2287080000005517 milliseconds
+2024-02-10T08:22:09.032Z [info] : Fetching all published file
+2024-02-10T08:22:09.034Z [info] : Fetching all published file successfull!
+2024-02-10T08:31:13.397Z [info] : Database connection succesfull and port is running...
+2024-02-10T08:31:21.036Z [info] : Fetching all published files API time: 1.278374999999869 milliseconds
+2024-02-10T08:31:21.149Z [info] : Fetching all published file
+2024-02-10T08:31:21.151Z [info] : Fetching all published file successfull!
+2024-02-10T08:31:21.152Z [info] : Fetching all published files API time: 0.1367499999996653 milliseconds
+2024-02-10T08:31:21.198Z [info] : Fetching all published file
+2024-02-10T08:31:21.199Z [info] : Fetching all published file successfull!
+2024-02-10T08:31:27.194Z [info] : Analyzing imported text file....
+2024-02-10T08:31:27.196Z [info] : New text analyzing is sucessfull!
+2024-02-10T08:31:27.197Z [info] : New file creation API time: 3.6508750000011787 milliseconds
+2024-02-10T08:31:27.201Z [info] : Word count: 121
+2024-02-10T08:31:27.201Z [info] : Character count: 698
+2024-02-10T08:31:27.201Z [info] : Sentence count: 19
+2024-02-10T08:31:27.201Z [info] : Paragraph count: 1
+2024-02-10T08:31:27.201Z [info] : Longest word: Pellentesque
+2024-02-10T08:31:27.263Z [info] : Successfully created new file and stored to database
+2024-02-10T08:31:27.276Z [info] : Fetching all published files API time: 0.17733399999997346 milliseconds
+2024-02-10T08:31:27.318Z [info] : Fetching all published file
+2024-02-10T08:31:27.319Z [info] : Fetching all published file successfull!
+2024-02-10T08:32:10.232Z [info] : Fetching words count API time: 0.5389159999976982 milliseconds
+2024-02-10T08:32:10.289Z [info] : Fetching words id: 65c7345faae5252477599bee.
+2024-02-10T08:32:10.290Z [info] : Fetching words successfull!
+2024-02-10T08:32:17.374Z [info] : Fetching characters count API time: 0.8851250000006985 milliseconds
+2024-02-10T08:32:17.426Z [info] : Fetching characters id: 65c7345faae5252477599bee.
+2024-02-10T08:32:17.427Z [info] : Fetching characters successfull!
+2024-02-10T08:32:20.756Z [info] : Fetching sentences count API time: 0.5259170000063023 milliseconds
+2024-02-10T08:32:20.807Z [info] : Fetching sentences id: 65c7345faae5252477599bee.
+2024-02-10T08:32:20.808Z [info] : Fetching sentences successfull!
+2024-02-10T08:32:23.354Z [info] : Fetching paragraphs count API time: 0.29629100000602193 milliseconds
+2024-02-10T08:32:23.407Z [info] : Fetching paragraphs id: 65c7345faae5252477599bee.
+2024-02-10T08:32:23.408Z [info] : Fetching paragraphs successfull!
+2024-02-10T08:32:39.834Z [info] : Fetching longest paragraphs API time: 0.607040999995661 milliseconds
+2024-02-10T08:32:39.879Z [info] : Fetching longest paragraphs id: 65c7345faae5252477599bee.
+2024-02-10T08:32:39.880Z [info] : Fetching longest paragraphs successfull!
+2024-02-10T08:38:08.019Z [info] : Fetching all published files API time: 0.7165829999721609 milliseconds
+2024-02-10T08:38:08.087Z [info] : Fetching all published file
+2024-02-10T08:38:08.088Z [info] : Fetching all published file successfull!
+2024-02-10T08:38:08.089Z [info] : Fetching all published files API time: 0.14100000000325963 milliseconds
+2024-02-10T08:38:08.132Z [info] : Fetching all published file
+2024-02-10T08:38:08.133Z [info] : Fetching all published file successfull!
+2024-02-10T08:38:14.141Z [info] : Analyzing imported text file....
+2024-02-10T08:38:14.141Z [info] : New text analyzing is sucessfull!
+2024-02-10T08:38:14.141Z [info] : New file creation API time: 0.4077500000130385 milliseconds
+2024-02-10T08:38:14.144Z [info] : Word count: 88
+2024-02-10T08:38:14.144Z [info] : Character count: 485
+2024-02-10T08:38:14.144Z [info] : Sentence count: 7
+2024-02-10T08:38:14.144Z [info] : Paragraph count: 2
+2024-02-10T08:38:14.144Z [info] : Longest word: experience
+2024-02-10T08:38:14.207Z [info] : Successfully created new file and stored to database
+2024-02-10T08:38:14.218Z [info] : Fetching all published files API time: 0.1507090000086464 milliseconds
+2024-02-10T08:38:14.263Z [info] : Fetching all published file
+2024-02-10T08:38:14.264Z [info] : Fetching all published file successfull!
+2024-02-10T08:38:36.887Z [info] : Fetching words count API time: 1.041333000001032 milliseconds
+2024-02-10T08:38:36.952Z [info] : Fetching words id: 65c7302f180e02398bf88aae.
+2024-02-10T08:38:36.953Z [info] : Fetching words successfull!
+2024-02-10T08:38:40.255Z [info] : Fetching words count API time: 0.16695799998706207 milliseconds
+2024-02-10T08:38:40.433Z [info] : Fetching words id: 65c735f6aae5252477599bf8.
+2024-02-10T08:38:40.434Z [info] : Fetching words successfull!
+2024-02-10T08:38:44.577Z [info] : Fetching characters count API time: 0.1286250000121072 milliseconds
+2024-02-10T08:38:44.619Z [info] : Fetching characters id: 65c735f6aae5252477599bf8.
+2024-02-10T08:38:44.621Z [info] : Fetching characters successfull!
+2024-02-10T08:38:55.113Z [info] : Fetching sentences count API time: 0.2941660000360571 milliseconds
+2024-02-10T08:38:55.164Z [info] : Fetching sentences id: 65c735f6aae5252477599bf8.
+2024-02-10T08:38:55.165Z [info] : Fetching sentences successfull!
+2024-02-10T08:38:58.474Z [info] : Fetching paragraphs count API time: 0.20145900000352412 milliseconds
+2024-02-10T08:38:58.520Z [info] : Fetching paragraphs id: 65c735f6aae5252477599bf8.
+2024-02-10T08:38:58.521Z [info] : Fetching paragraphs successfull!
+2024-02-10T08:38:59.997Z [info] : Fetching longest paragraphs API time: 0.21708299999590963 milliseconds
+2024-02-10T08:39:00.047Z [info] : Fetching longest paragraphs id: 65c735f6aae5252477599bf8.
+2024-02-10T08:39:00.049Z [info] : Fetching longest paragraphs successfull!
+2024-02-10T08:42:17.800Z [info] : Fetching sentences count API time: 0.6658750000642613 milliseconds
+2024-02-10T08:42:17.846Z [info] : Fetching sentences id: 65c735f6aae5252477599bf8.
+2024-02-10T08:42:17.846Z [info] : Fetching sentences successfull!
+2024-02-10T08:44:56.750Z [info] : Database connection succesfull and port is running...
+2024-02-10T08:49:37.775Z [info] : Database connection succesfull and port is running...
+2024-02-10T08:49:47.906Z [info] : Fetching all published files API time: 1.1735410000001139 milliseconds
+2024-02-10T08:49:47.957Z [info] : Fetching all published file
+2024-02-10T08:49:47.960Z [info] : Fetching all published file successfull!
+2024-02-10T08:49:47.981Z [info] : Fetching all published files API time: 0.14545800000087183 milliseconds
+2024-02-10T08:49:48.024Z [info] : Fetching all published file
+2024-02-10T08:49:48.025Z [info] : Fetching all published file successfull!
+2024-02-10T08:50:04.123Z [info] : Analyzing imported text file....
+2024-02-10T08:50:04.127Z [info] : New text analyzing is sucessfull!
+2024-02-10T08:50:04.128Z [info] : New file creation API time: 4.414874999998574 milliseconds
+2024-02-10T08:50:04.132Z [info] : Word count: 91
+2024-02-10T08:50:04.132Z [info] : Character count: 485
+2024-02-10T08:50:04.132Z [info] : Sentence count: 10
+2024-02-10T08:50:04.132Z [info] : Paragraph count: 2
+2024-02-10T08:50:04.132Z [info] : Longest word: experience
+2024-02-10T08:50:04.196Z [info] : Successfully created new file and stored to database
+2024-02-10T08:50:04.215Z [info] : Fetching all published files API time: 0.12179100000139442 milliseconds
+2024-02-10T08:50:04.258Z [info] : Fetching all published file
+2024-02-10T08:50:04.259Z [info] : Fetching all published file successfull!
+2024-02-10T08:52:18.174Z [info] : Database connection succesfull and port is running...
+2024-02-10T08:52:21.321Z [info] : Fetching all published files API time: 1.530917000000045 milliseconds
+2024-02-10T08:52:21.377Z [info] : Fetching all published file
+2024-02-10T08:52:21.378Z [info] : Fetching all published file successfull!
+2024-02-10T08:52:21.379Z [info] : Fetching all published files API time: 0.19858300000032614 milliseconds
+2024-02-10T08:52:21.422Z [info] : Fetching all published file
+2024-02-10T08:52:21.423Z [info] : Fetching all published file successfull!
+2024-02-10T08:52:24.859Z [info] : Analyzing imported text file....
+2024-02-10T08:52:24.861Z [info] : New text analyzing is sucessfull!
+2024-02-10T08:52:24.862Z [info] : New file creation API time: 3.1080409999995027 milliseconds
+2024-02-10T08:53:17.307Z [info] : Database connection succesfull and port is running...
+2024-02-10T08:54:00.182Z [info] : Fetching sentences count API time: 2.6052080000008573 milliseconds
+2024-02-10T08:54:00.333Z [info] : Fetching sentences id: 65c735f6aae5252477599bf8.
+2024-02-10T08:54:00.336Z [info] : Fetching sentences successfull!
+2024-02-10T08:54:02.925Z [info] : Fetching sentences count API time: 0.6607500000027358 milliseconds
+2024-02-10T08:54:02.984Z [info] : Fetching sentences id: 65c738bc57dedfe0e3bff38d.
+2024-02-10T08:54:02.986Z [info] : Fetching sentences successfull!
+2024-02-10T08:54:12.088Z [info] : Fetching all published files API time: 0.2660420000029262 milliseconds
+2024-02-10T08:54:12.134Z [info] : Fetching all published file
+2024-02-10T08:54:12.137Z [info] : Fetching all published file successfull!
+2024-02-10T08:54:12.138Z [info] : Fetching all published files API time: 0.11429099999804748 milliseconds
+2024-02-10T08:54:12.179Z [info] : Fetching all published file
+2024-02-10T08:54:12.181Z [info] : Fetching all published file successfull!
+2024-02-10T08:57:43.449Z [info] : Database connection succesfull and port is running...
+2024-02-10T08:57:47.665Z [info] : Fetching all published files API time: 1.407333999999537 milliseconds
+2024-02-10T08:57:47.718Z [info] : Fetching all published file
+2024-02-10T08:57:47.720Z [info] : Fetching all published file successfull!
+2024-02-10T08:57:47.721Z [info] : Fetching all published files API time: 0.14741700000013225 milliseconds
+2024-02-10T08:57:47.764Z [info] : Fetching all published file
+2024-02-10T08:57:47.765Z [info] : Fetching all published file successfull!
+2024-02-10T08:57:53.315Z [info] : Analyzing imported text file....
+2024-02-10T08:57:53.317Z [info] : New text analyzing is sucessfull!
+2024-02-10T08:57:53.318Z [info] : New file creation API time: 2.9985840000008466 milliseconds
+2024-02-10T08:57:53.393Z [info] : Successfully created new file and stored to database
+2024-02-10T08:57:53.407Z [info] : Fetching all published files API time: 0.19637499999953434 milliseconds
+2024-02-10T08:57:53.451Z [info] : Fetching all published file
+2024-02-10T08:57:53.452Z [info] : Fetching all published file successfull!
+2024-02-10T08:57:55.655Z [info] : Fetching words count API time: 0.3348329999989801 milliseconds
+2024-02-10T08:57:55.701Z [info] : Fetching words id: 65c73a91b878d6305e30c53c.
+2024-02-10T08:57:55.703Z [info] : Fetching words successfull!
+2024-02-10T08:57:57.755Z [info] : Fetching characters count API time: 0.5407909999994445 milliseconds
+2024-02-10T08:57:57.812Z [info] : Fetching characters id: 65c73a91b878d6305e30c53c.
+2024-02-10T08:57:57.814Z [info] : Fetching characters successfull!
+2024-02-10T08:58:02.867Z [info] : Fetching sentences count API time: 0.3840840000011667 milliseconds
+2024-02-10T08:58:02.920Z [info] : Fetching sentences id: 65c73a91b878d6305e30c53c.
+2024-02-10T08:58:02.921Z [info] : Fetching sentences successfull!
+2024-02-10T08:58:04.524Z [info] : Fetching paragraphs count API time: 0.310750000000553 milliseconds
+2024-02-10T08:58:04.567Z [info] : Fetching paragraphs id: 65c73a91b878d6305e30c53c.
+2024-02-10T08:58:04.569Z [info] : Fetching paragraphs successfull!
+2024-02-10T08:58:06.179Z [info] : Fetching longest paragraphs API time: 0.615417000000889 milliseconds
+2024-02-10T08:58:06.228Z [info] : Fetching longest paragraphs id: 65c73a91b878d6305e30c53c.
+2024-02-10T08:58:06.229Z [info] : Fetching longest paragraphs successfull!
+2024-02-10T09:02:59.499Z [info] : Database connection succesfull and port is running...
+2024-02-10T09:03:02.495Z [info] : Fetching all published files API time: 1.3630419999999503 milliseconds
+2024-02-10T09:03:02.551Z [info] : Fetching all published file
+2024-02-10T09:03:02.553Z [info] : Fetching all published file successfull!
+2024-02-10T09:03:02.554Z [info] : Fetching all published files API time: 0.15124999999989086 milliseconds
+2024-02-10T09:03:02.606Z [info] : Fetching all published file
+2024-02-10T09:03:02.607Z [info] : Fetching all published file successfull!
+2024-02-10T09:03:06.972Z [info] : Analyzing imported text file....
+2024-02-10T09:03:06.973Z [info] : New text analyzing is sucessfull!
+2024-02-10T09:03:06.974Z [info] : New file creation API time: 1.9202919999988808 milliseconds
+2024-02-10T09:03:07.052Z [info] : Successfully created new file and stored to database
+2024-02-10T09:03:07.059Z [info] : Fetching all published files API time: 0.16391699999985576 milliseconds
+2024-02-10T09:03:07.101Z [info] : Fetching all published file
+2024-02-10T09:03:07.102Z [info] : Fetching all published file successfull!
+2024-02-10T09:03:51.608Z [info] : Database connection succesfull and port is running...
+2024-02-10T09:03:54.941Z [info] : Fetching all published files API time: 6.814166000000114 milliseconds
+2024-02-10T09:03:55.012Z [info] : Fetching all published file
+2024-02-10T09:03:55.015Z [info] : Fetching all published file successfull!
+2024-02-10T09:03:55.015Z [info] : Fetching all published files API time: 0.10004200000003038 milliseconds
+2024-02-10T09:03:55.058Z [info] : Fetching all published file
+2024-02-10T09:03:55.059Z [info] : Fetching all published file successfull!
+2024-02-10T09:03:57.837Z [info] : Analyzing imported text file....
+2024-02-10T09:03:57.840Z [info] : New text analyzing is sucessfull!
+2024-02-10T09:03:57.841Z [info] : New file creation API time: 3.9007500000006985 milliseconds
+2024-02-10T09:03:57.924Z [info] : Successfully created new file and stored to database
+2024-02-10T09:03:57.931Z [info] : Fetching all published files API time: 0.1413330000004862 milliseconds
+2024-02-10T09:03:57.975Z [info] : Fetching all published file
+2024-02-10T09:03:57.976Z [info] : Fetching all published file successfull!
+2024-02-10T09:06:03.367Z [info] : Database connection succesfull and port is running...
+2024-02-10T09:06:58.060Z [info] : Fetching all published files API time: 1.5730840000032913 milliseconds
+2024-02-10T09:06:58.120Z [info] : Fetching all published file
+2024-02-10T09:06:58.121Z [info] : Fetching all published file successfull!
+2024-02-10T09:06:58.121Z [info] : Fetching all published files API time: 0.07625000000552973 milliseconds
+2024-02-10T09:06:58.169Z [info] : Fetching all published file
+2024-02-10T09:06:58.171Z [info] : Fetching all published file successfull!
+2024-02-10T09:07:02.006Z [info] : Analyzing imported text file....
+2024-02-10T09:07:02.009Z [info] : New text analyzing is sucessfull!
+2024-02-10T09:07:02.010Z [info] : New file creation API time: 3.591458999995666 milliseconds
+2024-02-10T09:07:02.085Z [info] : Successfully created new file and stored to database
+2024-02-10T09:07:02.102Z [info] : Fetching all published files API time: 0.39129200000024866 milliseconds
+2024-02-10T09:07:02.148Z [info] : Fetching all published file
+2024-02-10T09:07:02.149Z [info] : Fetching all published file successfull!
+2024-02-10T09:07:17.061Z [info] : Fetching sentences count API time: 0.27254200000606943 milliseconds
+2024-02-10T09:07:17.123Z [info] : Fetching sentences id: 65c73cb6963630ffdc47c8ea.
+2024-02-10T09:07:17.123Z [info] : Fetching sentences successfull!
+2024-02-10T09:07:19.976Z [info] : Fetching sentences count API time: 0.40245799999684095 milliseconds
+2024-02-10T09:07:20.027Z [info] : Fetching sentences id: 65c7302f180e02398bf88aae.
+2024-02-10T09:07:20.028Z [info] : Fetching sentences successfull!
+2024-02-10T09:07:22.038Z [info] : Fetching sentences count API time: 1.1592080000118585 milliseconds
+2024-02-10T09:07:22.083Z [info] : Fetching sentences id: 65c73bfd02ad732ea462e7ef.
+2024-02-10T09:07:22.084Z [info] : Fetching sentences successfull!
+2024-02-10T09:07:23.596Z [info] : Fetching sentences count API time: 0.24774999999499414 milliseconds
+2024-02-10T09:07:23.670Z [info] : Fetching sentences id: 65c73bca3bc4cd39f2eae6e1.
+2024-02-10T09:07:23.672Z [info] : Fetching sentences successfull!
+2024-02-10T09:07:25.506Z [info] : Fetching sentences count API time: 0.5380000000004657 milliseconds
+2024-02-10T09:07:25.558Z [info] : Fetching sentences id: 65c73a91b878d6305e30c53c.
+2024-02-10T09:07:25.558Z [info] : Fetching sentences successfull!
+2024-02-10T09:08:29.261Z [info] : Fetching words count API time: 0.6462919999903534 milliseconds
+2024-02-10T09:08:29.308Z [info] : Fetching words id: 65c73cb6963630ffdc47c8ea.
+2024-02-10T09:08:29.309Z [info] : Fetching words successfull!
+2024-02-10T09:08:31.812Z [info] : Fetching characters count API time: 0.2424170000012964 milliseconds
+2024-02-10T09:08:31.855Z [info] : Fetching characters id: 65c73cb6963630ffdc47c8ea.
+2024-02-10T09:08:31.856Z [info] : Fetching characters successfull!
+2024-02-10T09:09:14.775Z [info] : Database connection succesfull and port is running...
+2024-02-10T09:09:18.275Z [info] : Fetching all published files API time: 9.962416999999732 milliseconds
+2024-02-10T09:09:18.347Z [info] : Fetching all published file
+2024-02-10T09:09:18.349Z [info] : Fetching all published file successfull!
+2024-02-10T09:09:18.350Z [info] : Fetching all published files API time: 0.12337500000012369 milliseconds
+2024-02-10T09:09:18.394Z [info] : Fetching all published file
+2024-02-10T09:09:18.395Z [info] : Fetching all published file successfull!
+2024-02-10T09:09:22.775Z [info] : Analyzing imported text file....
+2024-02-10T09:09:22.777Z [info] : New text analyzing is sucessfull!
+2024-02-10T09:09:22.778Z [info] : New file creation API time: 2.6417920000003505 milliseconds
+2024-02-10T09:09:22.853Z [info] : Successfully created new file and stored to database
+2024-02-10T09:09:22.868Z [info] : Fetching all published files API time: 0.16270799999983865 milliseconds
+2024-02-10T09:09:22.911Z [info] : Fetching all published file
+2024-02-10T09:09:22.913Z [info] : Fetching all published file successfull!
+2024-02-10T09:09:44.001Z [info] : Fetching longest paragraphs API time: 0.6972089999981108 milliseconds
+2024-02-10T09:09:44.060Z [info] : Fetching longest paragraphs id: 65c73d422b8463648bdd049e.
+2024-02-10T09:09:44.062Z [info] : Fetching longest paragraphs successfull!
+2024-02-10T09:10:18.314Z [info] : Database connection succesfull and port is running...
+2024-02-10T09:10:19.945Z [info] : Fetching all published files API time: 4.2977499999997235 milliseconds
+2024-02-10T09:10:19.999Z [info] : Fetching all published file
+2024-02-10T09:10:20.001Z [info] : Fetching all published file successfull!
+2024-02-10T09:10:20.001Z [info] : Fetching all published files API time: 0.09266600000000835 milliseconds
+2024-02-10T09:10:20.060Z [info] : Fetching all published file
+2024-02-10T09:10:20.061Z [info] : Fetching all published file successfull!
+2024-02-10T09:10:23.614Z [info] : Analyzing imported text file....
+2024-02-10T09:10:23.617Z [info] : New text analyzing is sucessfull!
+2024-02-10T09:10:23.618Z [info] : New file creation API time: 3.168499999999767 milliseconds
+2024-02-10T09:10:23.682Z [info] : Successfully created new file and stored to database
+2024-02-10T09:10:23.690Z [info] : Fetching all published files API time: 0.19304100000044855 milliseconds
+2024-02-10T09:10:23.733Z [info] : Fetching all published file
+2024-02-10T09:10:23.735Z [info] : Fetching all published file successfull!
+2024-02-10T09:11:16.367Z [info] : Database connection succesfull and port is running...
+2024-02-10T09:11:19.223Z [info] : Fetching all published files API time: 1.7937080000001515 milliseconds
+2024-02-10T09:11:19.275Z [info] : Fetching all published file
+2024-02-10T09:11:19.277Z [info] : Fetching all published file successfull!
+2024-02-10T09:11:19.277Z [info] : Fetching all published files API time: 0.10362499999973807 milliseconds
+2024-02-10T09:11:19.320Z [info] : Fetching all published file
+2024-02-10T09:11:19.321Z [info] : Fetching all published file successfull!
+2024-02-10T09:11:22.605Z [info] : Analyzing imported text file....
+2024-02-10T09:11:22.608Z [info] : New text analyzing is sucessfull!
+2024-02-10T09:11:22.609Z [info] : New file creation API time: 3.144959000000199 milliseconds
+2024-02-10T09:11:22.679Z [info] : Successfully created new file and stored to database
+2024-02-10T09:11:22.689Z [info] : Fetching all published files API time: 0.18683299999975134 milliseconds
+2024-02-10T09:11:22.733Z [info] : Fetching all published file
+2024-02-10T09:11:22.735Z [info] : Fetching all published file successfull!
+2024-02-10T09:12:48.728Z [info] : Database connection succesfull and port is running...
+2024-02-10T09:12:53.760Z [info] : Fetching all published files API time: 0.7010000000000218 milliseconds
+2024-02-10T09:12:53.811Z [info] : Fetching all published file
+2024-02-10T09:12:53.813Z [info] : Fetching all published file successfull!
+2024-02-10T09:12:53.817Z [info] : Fetching all published files API time: 0.1934160000000702 milliseconds
+2024-02-10T09:12:53.866Z [info] : Fetching all published file
+2024-02-10T09:12:53.867Z [info] : Fetching all published file successfull!
+2024-02-10T09:12:58.941Z [info] : Analyzing imported text file....
+2024-02-10T09:12:58.942Z [info] : New text analyzing is sucessfull!
+2024-02-10T09:12:58.943Z [info] : New file creation API time: 2.549790999999459 milliseconds
+2024-02-10T09:12:59.010Z [info] : Successfully created new file and stored to database
+2024-02-10T09:12:59.039Z [info] : Fetching all published files API time: 0.2446670000008453 milliseconds
+2024-02-10T09:12:59.084Z [info] : Fetching all published file
+2024-02-10T09:12:59.086Z [info] : Fetching all published file successfull!
+2024-02-10T09:13:06.339Z [info] : Fetching characters count API time: 0.4383750000015425 milliseconds
+2024-02-10T09:13:06.395Z [info] : Fetching characters id: 65c73e1a4b5d13d3a597cae0.
+2024-02-10T09:13:06.396Z [info] : Fetching characters successfull!
+2024-02-10T09:13:20.225Z [info] : Fetching words count API time: 0.5926660000004631 milliseconds
+2024-02-10T09:13:20.277Z [info] : Fetching words id: 65c73e1a4b5d13d3a597cae0.
+2024-02-10T09:13:20.279Z [info] : Fetching words successfull!
+2024-02-10T09:13:23.117Z [info] : Fetching sentences count API time: 0.49133399999846006 milliseconds
+2024-02-10T09:13:23.173Z [info] : Fetching sentences id: 65c73e1a4b5d13d3a597cae0.
+2024-02-10T09:13:23.175Z [info] : Fetching sentences successfull!
+2024-02-10T09:13:24.463Z [info] : Fetching paragraphs count API time: 0.2508749999979045 milliseconds
+2024-02-10T09:13:24.506Z [info] : Fetching paragraphs id: 65c73e1a4b5d13d3a597cae0.
+2024-02-10T09:13:24.507Z [info] : Fetching paragraphs successfull!
+2024-02-10T09:13:25.823Z [info] : Fetching longest paragraphs API time: 0.5296670000025188 milliseconds
+2024-02-10T09:13:25.867Z [info] : Fetching longest paragraphs id: 65c73e1a4b5d13d3a597cae0.
+2024-02-10T09:13:25.868Z [info] : Fetching longest paragraphs successfull!
+2024-02-10T09:13:30.164Z [info] : Fetching characters count API time: 0.6837920000034501 milliseconds
+2024-02-10T09:13:30.208Z [info] : Fetching characters id: 65c73e1a4b5d13d3a597cae0.
+2024-02-10T09:13:30.208Z [info] : Fetching characters successfull!
+2024-02-10T09:14:11.341Z [info] : Fetching characters count API time: 0.7735839999950258 milliseconds
+2024-02-10T09:14:11.414Z [info] : Fetching characters id: 65c73e1a4b5d13d3a597cae0.
+2024-02-10T09:14:11.415Z [info] : Fetching characters successfull!
+2024-02-10T09:14:54.303Z [error] : No text file provided
+2024-02-10T09:14:55.969Z [info] : Fetching all published files API time: 0.2470000000030268 milliseconds
+2024-02-10T09:14:56.032Z [info] : Fetching all published file
+2024-02-10T09:14:56.034Z [info] : Fetching all published file successfull!
+2024-02-10T09:14:56.034Z [info] : Fetching all published files API time: 0.06695900000340771 milliseconds
+2024-02-10T09:14:56.077Z [info] : Fetching all published file
+2024-02-10T09:14:56.078Z [info] : Fetching all published file successfull!
+2024-02-10T09:15:00.045Z [info] : Analyzing imported text file....
+2024-02-10T09:15:00.046Z [info] : New text analyzing is sucessfull!
+2024-02-10T09:15:00.046Z [info] : New file creation API time: 1.0402500000200234 milliseconds
+2024-02-10T09:15:00.174Z [info] : Successfully created new file and stored to database
+2024-02-10T09:15:00.193Z [info] : Fetching all published files API time: 0.30916699999943376 milliseconds
+2024-02-10T09:15:00.237Z [info] : Fetching all published file
+2024-02-10T09:15:00.240Z [info] : Fetching all published file successfull!
+2024-02-10T09:15:02.497Z [info] : Fetching words count API time: 0.12974999999278225 milliseconds
+2024-02-10T09:15:02.550Z [info] : Fetching words id: 65c73e944b5d13d3a597caec.
+2024-02-10T09:15:02.551Z [info] : Fetching words successfull!
+2024-02-10T09:15:03.960Z [info] : Fetching characters count API time: 0.44433300002128817 milliseconds
+2024-02-10T09:15:04.010Z [info] : Fetching characters id: 65c73e944b5d13d3a597caec.
+2024-02-10T09:15:04.011Z [info] : Fetching characters successfull!
+2024-02-10T09:15:17.592Z [info] : Fetching sentences count API time: 0.3823749999864958 milliseconds
+2024-02-10T09:15:17.635Z [info] : Fetching sentences id: 65c73e944b5d13d3a597caec.
+2024-02-10T09:15:17.636Z [info] : Fetching sentences successfull!
+2024-02-10T09:15:18.683Z [info] : Fetching paragraphs count API time: 0.05354200000874698 milliseconds
+2024-02-10T09:15:18.723Z [info] : Fetching paragraphs id: 65c73e944b5d13d3a597caec.
+2024-02-10T09:15:18.723Z [info] : Fetching paragraphs successfull!
+2024-02-10T09:16:21.949Z [info] : Database connection succesfull and port is running...
+2024-02-10T09:16:32.245Z [info] : Database connection succesfull and port is running...
+2024-02-10T09:16:38.027Z [info] : Fetching all published files API time: 1.4515410000003612 milliseconds
+2024-02-10T09:16:38.089Z [info] : Fetching all published file
+2024-02-10T09:16:38.090Z [info] : Fetching all published file successfull!
+2024-02-10T09:16:38.091Z [info] : Fetching all published files API time: 0.10583299999962037 milliseconds
+2024-02-10T09:16:38.134Z [info] : Fetching all published file
+2024-02-10T09:16:38.135Z [info] : Fetching all published file successfull!
+2024-02-10T09:16:42.269Z [info] : Analyzing imported text file....
+2024-02-10T09:16:42.271Z [info] : New text analyzing is sucessfull!
+2024-02-10T09:16:42.271Z [info] : New file creation API time: 2.610000000000582 milliseconds
+2024-02-10T09:16:42.332Z [info] : Successfully created new file and stored to database
+2024-02-10T09:16:42.338Z [info] : Fetching all published files API time: 0.11687499999970896 milliseconds
+2024-02-10T09:16:42.380Z [info] : Fetching all published file
+2024-02-10T09:16:42.381Z [info] : Fetching all published file successfull!
+2024-02-10T09:17:12.636Z [info] : Fetching words count API time: 0.3852919999990263 milliseconds
+2024-02-10T09:17:12.680Z [info] : Fetching words id: 65c73efa07832f1c3101ccdd.
+2024-02-10T09:17:12.681Z [info] : Fetching words successfull!
+2024-02-10T09:17:15.478Z [info] : Fetching characters count API time: 0.5999999999985448 milliseconds
+2024-02-10T09:17:15.529Z [info] : Fetching characters id: 65c73efa07832f1c3101ccdd.
+2024-02-10T09:17:15.530Z [info] : Fetching characters successfull!
+2024-02-10T09:17:17.471Z [info] : Fetching sentences count API time: 1.1410830000022543 milliseconds
+2024-02-10T09:17:17.515Z [info] : Fetching sentences id: 65c73efa07832f1c3101ccdd.
+2024-02-10T09:17:17.517Z [info] : Fetching sentences successfull!
+2024-02-10T09:17:18.833Z [info] : Fetching paragraphs count API time: 0.39591700000164565 milliseconds
+2024-02-10T09:17:18.877Z [info] : Fetching paragraphs id: 65c73efa07832f1c3101ccdd.
+2024-02-10T09:17:18.879Z [info] : Fetching paragraphs successfull!
+2024-02-10T09:17:21.823Z [info] : Fetching longest paragraphs API time: 0.573208000001614 milliseconds
+2024-02-10T09:17:21.874Z [info] : Fetching longest paragraphs id: 65c73efa07832f1c3101ccdd.
+2024-02-10T09:17:21.875Z [info] : Fetching longest paragraphs successfull!
+2024-02-10T09:21:23.096Z [info] : Database connection succesfull and port is running...
+2024-02-10T09:21:54.596Z [info] : Database connection succesfull and port is running...
+2024-02-10T09:21:59.090Z [info] : Fetching all published files API time: 1.4749580000006972 milliseconds
+2024-02-10T09:21:59.148Z [info] : Fetching all published file
+2024-02-10T09:21:59.149Z [info] : Fetching all published file successfull!
+2024-02-10T09:21:59.150Z [info] : Fetching all published files API time: 0.10874999999941792 milliseconds
+2024-02-10T09:21:59.194Z [info] : Fetching all published file
+2024-02-10T09:21:59.195Z [info] : Fetching all published file successfull!
+2024-02-10T09:22:01.523Z [info] : Deleting file API time: 0.35037499999998545 milliseconds
+2024-02-10T09:22:01.631Z [info] : Deleted file id: 65c73efa07832f1c3101ccdd.
+2024-02-10T09:22:01.634Z [info] : File deleted successfully!
+2024-02-10T09:22:01.645Z [info] : Fetching all published files API time: 0.5725419999998849 milliseconds
+2024-02-10T09:22:01.704Z [info] : Fetching all published file
+2024-02-10T09:22:01.706Z [info] : Fetching all published file successfull!
+2024-02-10T09:22:02.448Z [info] : Deleting file API time: 0.41899999999986903 milliseconds
+2024-02-10T09:22:02.543Z [info] : Deleted file id: 65c73e944b5d13d3a597caec.
+2024-02-10T09:22:02.545Z [info] : File deleted successfully!
+2024-02-10T09:22:02.554Z [info] : Fetching all published files API time: 1.016208999999435 milliseconds
+2024-02-10T09:22:02.602Z [info] : Fetching all published file
+2024-02-10T09:22:02.603Z [info] : Fetching all published file successfull!
+2024-02-10T09:22:03.278Z [info] : Deleting file API time: 0.40737500000068394 milliseconds
+2024-02-10T09:22:03.384Z [info] : Deleted file id: 65c73e1a4b5d13d3a597cae0.
+2024-02-10T09:22:03.385Z [info] : File deleted successfully!
+2024-02-10T09:22:03.395Z [info] : Fetching all published files API time: 0.25608400000055553 milliseconds
+2024-02-10T09:22:03.441Z [info] : Fetching all published file
+2024-02-10T09:22:03.443Z [info] : Fetching all published file successfull!
+2024-02-10T09:22:04.792Z [info] : Deleting file API time: 0.09358400000019174 milliseconds
+2024-02-10T09:22:04.908Z [info] : Deleted file id: 65c73dbab4a18a1a2ef8591b.
+2024-02-10T09:22:04.909Z [info] : File deleted successfully!
+2024-02-10T09:22:04.932Z [info] : Fetching all published files API time: 0.14125000000058208 milliseconds
+2024-02-10T09:22:04.976Z [info] : Fetching all published file
+2024-02-10T09:22:04.977Z [info] : Fetching all published file successfull!
+2024-02-10T09:22:06.081Z [info] : Deleting file API time: 0.25512499999967986 milliseconds
+2024-02-10T09:22:06.181Z [info] : Deleted file id: 65c73d7f4040a934ddb81f8b.
+2024-02-10T09:22:06.182Z [info] : File deleted successfully!
+2024-02-10T09:22:06.194Z [info] : Fetching all published files API time: 0.501166000000012 milliseconds
+2024-02-10T09:22:06.242Z [info] : Fetching all published file
+2024-02-10T09:22:06.243Z [info] : Fetching all published file successfull!
+2024-02-10T09:22:06.984Z [info] : Deleting file API time: 0.20304200000100536 milliseconds
+2024-02-10T09:22:07.085Z [info] : Deleted file id: 65c73d422b8463648bdd049e.
+2024-02-10T09:22:07.086Z [info] : File deleted successfully!
+2024-02-10T09:22:07.095Z [info] : Fetching all published files API time: 0.256083000000217 milliseconds
+2024-02-10T09:22:07.140Z [info] : Fetching all published file
+2024-02-10T09:22:07.142Z [info] : Fetching all published file successfull!
+2024-02-10T09:22:08.123Z [info] : Deleting file API time: 0.21512500000062573 milliseconds
+2024-02-10T09:22:08.226Z [info] : Deleted file id: 65c7302f180e02398bf88aae.
+2024-02-10T09:22:08.227Z [info] : File deleted successfully!
+2024-02-10T09:22:08.235Z [info] : Fetching all published files API time: 0.190416000001278 milliseconds
+2024-02-10T09:22:08.291Z [info] : Fetching all published file
+2024-02-10T09:22:08.293Z [info] : Fetching all published file successfull!
+2024-02-10T09:22:08.774Z [info] : Deleting file API time: 0.15070799999921292 milliseconds
+2024-02-10T09:22:08.879Z [info] : Deleted file id: 65c7323028ee776828b83601.
+2024-02-10T09:22:08.881Z [info] : File deleted successfully!
+2024-02-10T09:22:08.888Z [info] : Fetching all published files API time: 0.225125000000844 milliseconds
+2024-02-10T09:22:08.933Z [info] : Fetching all published file
+2024-02-10T09:22:08.935Z [info] : Fetching all published file successfull!
+2024-02-10T09:22:09.369Z [info] : Deleting file API time: 0.721917000000758 milliseconds
+2024-02-10T09:22:09.470Z [info] : Deleted file id: 65c7345faae5252477599bee.
+2024-02-10T09:22:09.471Z [info] : File deleted successfully!
+2024-02-10T09:22:09.480Z [info] : Fetching all published files API time: 0.3684159999993426 milliseconds
+2024-02-10T09:22:09.524Z [info] : Fetching all published file
+2024-02-10T09:22:09.526Z [info] : Fetching all published file successfull!
+2024-02-10T09:22:09.962Z [info] : Deleting file API time: 0.39249999999992724 milliseconds
+2024-02-10T09:22:10.055Z [info] : Deleted file id: 65c735f6aae5252477599bf8.
+2024-02-10T09:22:10.057Z [info] : File deleted successfully!
+2024-02-10T09:22:10.073Z [info] : Fetching all published files API time: 0.14199999999982538 milliseconds
+2024-02-10T09:22:10.119Z [info] : Fetching all published file
+2024-02-10T09:22:10.121Z [info] : Fetching all published file successfull!
+2024-02-10T09:22:10.518Z [info] : Deleting file API time: 0.13258300000234158 milliseconds
+2024-02-10T09:22:10.620Z [info] : Deleted file id: 65c738bc57dedfe0e3bff38d.
+2024-02-10T09:22:10.621Z [info] : File deleted successfully!
+2024-02-10T09:22:10.629Z [info] : Fetching all published files API time: 0.17866700000013225 milliseconds
+2024-02-10T09:22:10.672Z [info] : Fetching all published file
+2024-02-10T09:22:10.674Z [info] : Fetching all published file successfull!
+2024-02-10T09:22:11.043Z [info] : Deleting file API time: 0.14829099999769824 milliseconds
+2024-02-10T09:22:11.139Z [info] : Deleted file id: 65c73a91b878d6305e30c53c.
+2024-02-10T09:22:11.140Z [info] : File deleted successfully!
+2024-02-10T09:22:11.146Z [info] : Fetching all published files API time: 0.12483299999803421 milliseconds
+2024-02-10T09:22:11.188Z [info] : Fetching all published file
+2024-02-10T09:22:11.188Z [info] : Fetching all published file successfull!
+2024-02-10T09:22:11.880Z [info] : Deleting file API time: 0.19070899999860558 milliseconds
+2024-02-10T09:22:11.975Z [info] : Deleted file id: 65c73bca3bc4cd39f2eae6e1.
+2024-02-10T09:22:11.976Z [info] : File deleted successfully!
+2024-02-10T09:22:11.983Z [info] : Fetching all published files API time: 0.15291699999943376 milliseconds
+2024-02-10T09:22:12.025Z [info] : Fetching all published file
+2024-02-10T09:22:12.026Z [info] : Fetching all published file successfull!
+2024-02-10T09:22:14.433Z [info] : Fetching all published files API time: 0.09141699999963748 milliseconds
+2024-02-10T09:22:14.477Z [info] : Fetching all published file
+2024-02-10T09:22:14.479Z [info] : Fetching all published file successfull!
+2024-02-10T09:22:14.479Z [info] : Fetching all published files API time: 0.05687500000203727 milliseconds
+2024-02-10T09:22:14.526Z [info] : Fetching all published file
+2024-02-10T09:22:14.528Z [info] : Fetching all published file successfull!
+2024-02-10T09:22:19.945Z [info] : Analyzing imported text file....
+2024-02-10T09:22:19.947Z [info] : New text analyzing is sucessfull!
+2024-02-10T09:22:19.947Z [info] : New file creation API time: 2.1472079999985 milliseconds
+2024-02-10T09:22:20.047Z [info] : Successfully created new file and stored to database
+2024-02-10T09:22:20.078Z [info] : Fetching all published files API time: 0.26079200000094716 milliseconds
+2024-02-10T09:22:20.123Z [info] : Fetching all published file
+2024-02-10T09:22:20.124Z [info] : Fetching all published file successfull!
+2024-02-10T09:22:24.299Z [info] : Fetching words count API time: 0.234375 milliseconds
+2024-02-10T09:22:24.351Z [info] : Fetching words id: 65c7404b41b5b252f6eca3a3.
+2024-02-10T09:22:24.352Z [info] : Fetching words successfull!
+2024-02-10T09:22:34.362Z [info] : Fetching paragraphs count API time: 0.29641699999774573 milliseconds
+2024-02-10T09:22:34.414Z [info] : Fetching paragraphs id: 65c7404b41b5b252f6eca3a3.
+2024-02-10T09:22:34.415Z [info] : Fetching paragraphs successfull!
+2024-02-10T09:22:40.825Z [info] : Fetching characters count API time: 0.13895799999590963 milliseconds
+2024-02-10T09:22:40.878Z [info] : Fetching characters id: 65c7404b41b5b252f6eca3a3.
+2024-02-10T09:22:40.879Z [info] : Fetching characters successfull!
+2024-02-10T09:22:47.306Z [info] : Fetching sentences count API time: 0.13883300000452437 milliseconds
+2024-02-10T09:22:47.349Z [info] : Fetching sentences id: 65c7404b41b5b252f6eca3a3.
+2024-02-10T09:22:47.350Z [info] : Fetching sentences successfull!
+2024-02-10T09:22:48.776Z [info] : Fetching longest paragraphs API time: 0.21520899999450194 milliseconds
+2024-02-10T09:22:48.829Z [info] : Fetching longest paragraphs id: 65c7404b41b5b252f6eca3a3.
+2024-02-10T09:22:48.830Z [info] : Fetching longest paragraphs successfull!
+2024-02-10T09:23:08.441Z [info] : Fetching sentences count API time: 0.14229200000409037 milliseconds
+2024-02-10T09:23:08.489Z [info] : Fetching sentences id: 65c7404b41b5b252f6eca3a3.
+2024-02-10T09:23:08.490Z [info] : Fetching sentences successfull!
+2024-02-10T09:23:22.641Z [info] : Fetching words count API time: 0.9514590000035241 milliseconds
+2024-02-10T09:23:22.694Z [info] : Fetching words id: 65c7404b41b5b252f6eca3a3.
+2024-02-10T09:23:22.695Z [info] : Fetching words successfull!
+2024-02-10T09:23:24.891Z [info] : Fetching characters count API time: 0.2484159999876283 milliseconds
+2024-02-10T09:23:24.935Z [info] : Fetching characters id: 65c7404b41b5b252f6eca3a3.
+2024-02-10T09:23:24.936Z [info] : Fetching characters successfull!
+2024-02-10T09:23:27.758Z [info] : Fetching sentences count API time: 0.09895800000231247 milliseconds
+2024-02-10T09:23:27.813Z [info] : Fetching sentences id: 65c7404b41b5b252f6eca3a3.
+2024-02-10T09:23:27.814Z [info] : Fetching sentences successfull!
+2024-02-10T09:23:29.720Z [info] : Fetching paragraphs count API time: 0.1260000000038417 milliseconds
+2024-02-10T09:23:29.763Z [info] : Fetching paragraphs id: 65c7404b41b5b252f6eca3a3.
+2024-02-10T09:23:29.764Z [info] : Fetching paragraphs successfull!
+2024-02-10T09:23:31.129Z [info] : Fetching longest paragraphs API time: 0.2585000000108266 milliseconds
+2024-02-10T09:23:31.186Z [info] : Fetching longest paragraphs id: 65c7404b41b5b252f6eca3a3.
+2024-02-10T09:23:31.187Z [info] : Fetching longest paragraphs successfull!
+2024-02-10T09:29:16.640Z [info] : Database connection succesfull and port is running...
+2024-02-10T09:30:27.784Z [info] : Database connection succesfull and port is running...
+2024-02-10T09:30:34.917Z [info] : Fetching all published files API time: 1.381916000000274 milliseconds
+2024-02-10T09:30:34.974Z [info] : Fetching all published file
+2024-02-10T09:30:34.977Z [info] : Fetching all published file successfull!
+2024-02-10T09:30:34.978Z [info] : Fetching all published files API time: 0.1711249999989377 milliseconds
+2024-02-10T09:30:35.022Z [info] : Fetching all published file
+2024-02-10T09:30:35.023Z [info] : Fetching all published file successfull!
+2024-02-10T09:30:39.068Z [info] : Analyzing imported text file....
+2024-02-10T09:30:39.071Z [info] : New text analyzing is sucessfull!
+2024-02-10T09:30:39.071Z [info] : New file creation API time: 3.3201669999998558 milliseconds
+2024-02-10T09:30:39.137Z [info] : Successfully created new file and stored to database
+2024-02-10T09:30:39.144Z [info] : Fetching all published files API time: 0.19349999999940337 milliseconds
+2024-02-10T09:30:39.189Z [info] : Fetching all published file
+2024-02-10T09:30:39.190Z [info] : Fetching all published file successfull!
+2024-02-10T09:34:05.354Z [info] : Database connection succesfull and port is running...
+2024-02-10T09:35:16.726Z [info] : Database connection succesfull and port is running...
+2024-02-10T09:35:28.552Z [info] : Database connection succesfull and port is running...
+2024-02-10T09:35:30.304Z [info] : Fetching all published files API time: 2.2901670000001104 milliseconds
+2024-02-10T09:35:30.369Z [info] : Fetching all published file
+2024-02-10T09:35:30.371Z [info] : Fetching all published file successfull!
+2024-02-10T09:35:30.372Z [info] : Fetching all published files API time: 0.09520799999972951 milliseconds
+2024-02-10T09:35:30.414Z [info] : Fetching all published file
+2024-02-10T09:35:30.415Z [info] : Fetching all published file successfull!
+2024-02-10T09:35:34.470Z [info] : Analyzing imported text file....
+2024-02-10T09:35:34.473Z [info] : New text analyzing is sucessfull!
+2024-02-10T09:35:34.474Z [info] : New file creation API time: 3.301166000000194 milliseconds
+2024-02-10T09:35:34.552Z [info] : Analysis result: {
+  textUrl: 'textfiles/2024-02-10T09:35:34.466Z-testfile 3.txt',
+  words: '555',
+  characters: '3822',
+  sentences: '69',
+  paragraphs: '7',
+  _id: new ObjectId('65c74366f28e0f7710d2e5cc'),
+  createdAt: 2024-02-10T09:35:34.484Z,
+  updatedAt: 2024-02-10T09:35:34.484Z,
+  __v: 0
+}
+2024-02-10T09:35:34.552Z [info] : Successfully created new file and stored to database
+2024-02-10T09:35:34.555Z [info] : Fetching all published files API time: 0.19895899999937683 milliseconds
+2024-02-10T09:35:34.606Z [info] : Fetching all published file
+2024-02-10T09:35:34.608Z [info] : Fetching all published file successfull!
+2024-02-10T09:36:33.168Z [info] : Database connection succesfull and port is running...
+2024-02-10T09:36:40.959Z [info] : Fetching all published files API time: 1.5021670000005543 milliseconds
+2024-02-10T09:36:41.024Z [info] : Fetching all published file
+2024-02-10T09:36:41.027Z [info] : Fetching all published file successfull!
+2024-02-10T09:36:41.027Z [info] : Fetching all published files API time: 0.09508400000049733 milliseconds
+2024-02-10T09:36:41.070Z [info] : Fetching all published file
+2024-02-10T09:36:41.072Z [info] : Fetching all published file successfull!
+2024-02-10T09:36:44.608Z [info] : Analyzing imported text file....
+2024-02-10T09:36:44.610Z [info] : New text analyzing is sucessfull!
+2024-02-10T09:36:44.611Z [info] : New file creation API time: 3.028707999999824 milliseconds
+2024-02-10T09:36:44.688Z [info] : Analysis result: {
+  textUrl: 'textfiles/2024-02-10T09:36:44.603Z-testfile 3.txt',
+  words: '555',
+  characters: '3822',
+  sentences: '69',
+  paragraphs: '7',
+  _id: new ObjectId('65c743ac986f148851e8662d'),
+  createdAt: 2024-02-10T09:36:44.622Z,
+  updatedAt: 2024-02-10T09:36:44.622Z,
+  __v: 0
+}
+2024-02-10T09:36:44.689Z [info] : Successfully created new file and stored to database
+2024-02-10T09:36:44.693Z [info] : Fetching all published files API time: 0.26020799999969313 milliseconds
+2024-02-10T09:36:44.737Z [info] : Fetching all published file
+2024-02-10T09:36:44.740Z [info] : Fetching all published file successfull!
+2024-02-10T09:37:57.967Z [info] : Database connection succesfull and port is running...
+2024-02-10T09:38:00.918Z [info] : Fetching all published files API time: 1.396792000000005 milliseconds
+2024-02-10T09:38:00.971Z [info] : Fetching all published file
+2024-02-10T09:38:00.973Z [info] : Fetching all published file successfull!
+2024-02-10T09:38:00.974Z [info] : Fetching all published files API time: 0.13433400000030815 milliseconds
+2024-02-10T09:38:01.021Z [info] : Fetching all published file
+2024-02-10T09:38:01.023Z [info] : Fetching all published file successfull!
+2024-02-10T09:38:05.226Z [info] : Analyzing imported text file....
+2024-02-10T09:38:05.228Z [info] : New text analyzing is sucessfull!
+2024-02-10T09:38:05.228Z [info] : New file creation API time: 2.724833000000217 milliseconds
+2024-02-10T09:38:05.313Z [info] : Analysis result: {
+  textUrl: 'textfiles/2024-02-10T09:38:05.222Z-testfile 3.txt',
+  words: '555',
+  characters: '3822',
+  sentences: '69',
+  paragraphs: '7',
+  longestparagraphs: 'sollicitudin,',
+  _id: new ObjectId('65c743fda2db8c7d66dd6198'),
+  createdAt: 2024-02-10T09:38:05.240Z,
+  updatedAt: 2024-02-10T09:38:05.240Z,
+  __v: 0
+}
+2024-02-10T09:38:05.313Z [info] : Successfully created new file and stored to database
+2024-02-10T09:38:05.328Z [info] : Fetching all published files API time: 0.1702079999995476 milliseconds
+2024-02-10T09:38:05.373Z [info] : Fetching all published file
+2024-02-10T09:38:05.375Z [info] : Fetching all published file successfull!
+2024-02-10T09:41:55.678Z [info] : Database connection succesfull and port is running...
+2024-02-10T09:42:01.214Z [info] : Fetching all published files API time: 2.184958999999253 milliseconds
+2024-02-10T09:42:01.269Z [info] : Fetching all published file
+2024-02-10T09:42:01.271Z [info] : Fetching all published file successfull!
+2024-02-10T09:42:01.271Z [info] : Fetching all published files API time: 0.08762500000011642 milliseconds
+2024-02-10T09:42:01.318Z [info] : Fetching all published file
+2024-02-10T09:42:01.320Z [info] : Fetching all published file successfull!
+2024-02-10T09:42:02.275Z [info] : Deleting file API time: 0.212666999999783 milliseconds
+2024-02-10T09:42:02.367Z [info] : Deleted file id: 65c743fda2db8c7d66dd6198.
+2024-02-10T09:42:02.368Z [info] : File deleted successfully!
+2024-02-10T09:42:02.393Z [info] : Fetching all published files API time: 0.3568749999994907 milliseconds
+2024-02-10T09:42:02.435Z [info] : Fetching all published file
+2024-02-10T09:42:02.438Z [info] : Fetching all published file successfull!
+2024-02-10T09:42:03.207Z [info] : Deleting file API time: 0.9789999999993597 milliseconds
+2024-02-10T09:42:03.316Z [info] : Deleted file id: 65c743ac986f148851e8662d.
+2024-02-10T09:42:03.319Z [info] : File deleted successfully!
+2024-02-10T09:42:03.323Z [info] : Fetching all published files API time: 0.43891700000131095 milliseconds
+2024-02-10T09:42:03.365Z [info] : Fetching all published file
+2024-02-10T09:42:03.366Z [info] : Fetching all published file successfull!
+2024-02-10T09:42:04.094Z [info] : Deleting file API time: 1.1429169999992155 milliseconds
+2024-02-10T09:42:04.188Z [info] : Deleted file id: 65c74366f28e0f7710d2e5cc.
+2024-02-10T09:42:04.189Z [info] : File deleted successfully!
+2024-02-10T09:42:04.197Z [info] : Fetching all published files API time: 0.20141700000021956 milliseconds
+2024-02-10T09:42:04.243Z [info] : Fetching all published file
+2024-02-10T09:42:04.245Z [info] : Fetching all published file successfull!
+2024-02-10T09:42:04.976Z [info] : Deleting file API time: 0.27891599999929895 milliseconds
+2024-02-10T09:42:05.077Z [info] : Deleted file id: 65c7423f745b868a2911eb57.
+2024-02-10T09:42:05.078Z [info] : File deleted successfully!
+2024-02-10T09:42:05.086Z [info] : Fetching all published files API time: 0.23862499999995634 milliseconds
+2024-02-10T09:42:05.136Z [info] : Fetching all published file
+2024-02-10T09:42:05.138Z [info] : Fetching all published file successfull!
+2024-02-10T09:42:05.924Z [info] : Deleting file API time: 0.21333400000003166 milliseconds
+2024-02-10T09:42:06.023Z [info] : Deleted file id: 65c7404b41b5b252f6eca3a3.
+2024-02-10T09:42:06.024Z [info] : File deleted successfully!
+2024-02-10T09:42:06.032Z [info] : Fetching all published files API time: 0.21020800000042072 milliseconds
+2024-02-10T09:42:06.075Z [info] : Fetching all published file
+2024-02-10T09:42:06.076Z [info] : Fetching all published file successfull!
+2024-02-10T09:42:07.060Z [info] : Deleting file API time: 0.2743339999997261 milliseconds
+2024-02-10T09:42:07.156Z [info] : Deleted file id: 65c73cb6963630ffdc47c8ea.
+2024-02-10T09:42:07.157Z [info] : File deleted successfully!
+2024-02-10T09:42:07.173Z [info] : Fetching all published files API time: 0.27837499999986903 milliseconds
+2024-02-10T09:42:07.217Z [info] : Fetching all published file
+2024-02-10T09:42:07.219Z [info] : Fetching all published file successfull!
+2024-02-10T09:42:24.163Z [info] : Analyzing imported text file....
+2024-02-10T09:42:24.165Z [info] : New text analyzing is sucessfull!
+2024-02-10T09:42:24.165Z [info] : New file creation API time: 1.6660830000000715 milliseconds
+2024-02-10T09:42:24.237Z [info] : Analysis result: {
+  textUrl: 'textfiles/2024-02-10T09:42:24.161Z-testfile 3.txt',
+  words: '555',
+  characters: '3822',
+  sentences: '69',
+  paragraphs: '7',
+  longestparagraphs: 'sollicitudin',
+  _id: new ObjectId('65c74500c474fa00d7dd22b5'),
+  createdAt: 2024-02-10T09:42:24.175Z,
+  updatedAt: 2024-02-10T09:42:24.175Z,
+  __v: 0
+}
+2024-02-10T09:42:24.237Z [info] : Successfully created new file and stored to database
+2024-02-10T09:42:24.253Z [info] : Fetching all published files API time: 0.17799999999988358 milliseconds
+2024-02-10T09:42:24.295Z [info] : Fetching all published file
+2024-02-10T09:42:24.297Z [info] : Fetching all published file successfull!
+2024-02-10T09:42:25.753Z [info] : Fetching longest paragraphs API time: 0.1632500000014261 milliseconds
+2024-02-10T09:42:25.796Z [info] : Fetching longest paragraphs id: 65c74500c474fa00d7dd22b5.
+2024-02-10T09:42:25.797Z [info] : Fetching longest paragraphs successfull!
+2024-02-10T09:42:44.301Z [info] : Fetching all published files API time: 0.39108399999531684 milliseconds
+2024-02-10T09:42:44.343Z [info] : Fetching all published file
+2024-02-10T09:42:44.344Z [info] : Fetching all published file successfull!
+2024-02-10T09:42:44.344Z [info] : Fetching all published files API time: 0.06270800000493182 milliseconds
+2024-02-10T09:42:44.385Z [info] : Fetching all published file
+2024-02-10T09:42:44.386Z [info] : Fetching all published file successfull!
+2024-02-10T09:42:48.148Z [info] : Analyzing imported text file....
+2024-02-10T09:42:48.149Z [info] : New text analyzing is sucessfull!
+2024-02-10T09:42:48.149Z [info] : New file creation API time: 0.8378329999977723 milliseconds
+2024-02-10T09:42:48.224Z [info] : Analysis result: {
+  textUrl: 'textfiles/2024-02-10T09:42:48.146Z-testfile 3.txt',
+  words: '120',
+  characters: '716',
+  sentences: '11',
+  paragraphs: '4',
+  longestparagraphs: 'mailtosupportbitoai',
+  _id: new ObjectId('65c74518c474fa00d7dd22bb'),
+  createdAt: 2024-02-10T09:42:48.153Z,
+  updatedAt: 2024-02-10T09:42:48.153Z,
+  __v: 0
+}
+2024-02-10T09:42:48.224Z [info] : Successfully created new file and stored to database
+2024-02-10T09:42:48.232Z [info] : Fetching all published files API time: 0.20145799999590963 milliseconds
+2024-02-10T09:42:48.288Z [info] : Fetching all published file
+2024-02-10T09:42:48.289Z [info] : Fetching all published file successfull!
+2024-02-10T09:42:49.530Z [info] : Fetching longest paragraphs API time: 0.17133400000602705 milliseconds
+2024-02-10T09:42:49.571Z [info] : Fetching longest paragraphs id: 65c74518c474fa00d7dd22bb.
+2024-02-10T09:42:49.572Z [info] : Fetching longest paragraphs successfull!
+2024-02-10T09:45:05.814Z [info] : Database connection succesfull and port is running...
+2024-02-10T09:45:09.077Z [info] : Fetching all published files API time: 1.2671669999999722 milliseconds
+2024-02-10T09:45:09.133Z [info] : Fetching all published file
+2024-02-10T09:45:09.134Z [info] : Fetching all published file successfull!
+2024-02-10T09:45:09.134Z [info] : Fetching all published files API time: 0.0764580000004571 milliseconds
+2024-02-10T09:45:09.176Z [info] : Fetching all published file
+2024-02-10T09:45:09.177Z [info] : Fetching all published file successfull!
+2024-02-10T09:45:12.904Z [info] : Analyzing imported text file....
+2024-02-10T09:45:12.906Z [info] : New text analyzing is sucessfull!
+2024-02-10T09:45:12.907Z [info] : New file creation API time: 3.131375000000844 milliseconds
+2024-02-10T09:45:12.977Z [info] : Analysis result: {
+  textUrl: 'textfiles/2024-02-10T09:45:12.899Z-testfile 3.txt',
+  words: '120',
+  characters: '716',
+  sentences: '11',
+  paragraphs: '4',
+  longestparagraphs: 'mailto:support@bito.ai',
+  _id: new ObjectId('65c745a84cd37f668aa36e91'),
+  createdAt: 2024-02-10T09:45:12.918Z,
+  updatedAt: 2024-02-10T09:45:12.918Z,
+  __v: 0
+}
+2024-02-10T09:45:12.977Z [info] : Successfully created new file and stored to database
+2024-02-10T09:45:12.981Z [info] : Fetching all published files API time: 0.2017919999998412 milliseconds
+2024-02-10T09:45:13.025Z [info] : Fetching all published file
+2024-02-10T09:45:13.027Z [info] : Fetching all published file successfull!
+2024-02-10T09:45:13.918Z [info] : Fetching longest paragraphs API time: 0.6326250000001892 milliseconds
+2024-02-10T09:45:13.966Z [info] : Fetching longest paragraphs id: 65c745a84cd37f668aa36e91.
+2024-02-10T09:45:13.968Z [info] : Fetching longest paragraphs successfull!
+2024-02-10T09:45:31.950Z [info] : Database connection succesfull and port is running...
+2024-02-10T09:46:30.545Z [info] : Database connection succesfull and port is running...
+2024-02-10T09:48:50.182Z [info] : Database connection succesfull and port is running...
+2024-02-10T09:49:17.759Z [info] : Fetching all published files API time: 1.733457999998791 milliseconds
+2024-02-10T09:49:17.816Z [info] : Fetching all published file
+2024-02-10T09:49:17.818Z [info] : Fetching all published file successfull!
+2024-02-10T09:49:17.819Z [info] : Fetching all published files API time: 0.09125000000130967 milliseconds
+2024-02-10T09:49:17.862Z [info] : Fetching all published file
+2024-02-10T09:49:17.863Z [info] : Fetching all published file successfull!
+2024-02-10T09:49:23.193Z [info] : Analyzing imported text file....
+2024-02-10T09:49:23.195Z [info] : New text analyzing is sucessfull!
+2024-02-10T09:49:23.196Z [info] : New file creation API time: 2.396915999997873 milliseconds
+2024-02-10T09:49:23.198Z [info] : Text analysis successful.
+2024-02-10T09:49:23.204Z [info] : Text analysis result is [object Object]
+2024-02-10T09:49:23.272Z [info] : Successfully created new file and stored to database
+2024-02-10T09:49:23.287Z [info] : Fetching all published files API time: 0.1942909999997937 milliseconds
+2024-02-10T09:49:23.333Z [info] : Fetching all published file
+2024-02-10T09:49:23.336Z [info] : Fetching all published file successfull!
+2024-02-10T09:50:23.739Z [info] : Database connection succesfull and port is running...
