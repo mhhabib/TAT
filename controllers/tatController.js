@@ -1,9 +1,11 @@
 const Textfile = require("../models/tatModel")
 const Textanalyzestatics = require('../Utils/textAnalyze')
+const { performance } = require('perf_hooks');
+const fs = require('fs');
 
+// Fetching all created files controller
 exports.getFiles = (req, res, next) => {
     Textfile.find()
-        .sort({ createdAt: -1 }) // Sort by createdAt field in descending order
         .then(textfiles => {
             res.status(200).json({ message: 'Fetched posts successfully.', textfiles: textfiles });
         })
@@ -15,6 +17,7 @@ exports.getFiles = (req, res, next) => {
         });
 };
 
+// Creating new file and text analyze controller
 exports.createNewFile=(req, res, next)=>{
     if(!req.file){
         const error = new Error("No text file provided!");
@@ -22,6 +25,7 @@ exports.createNewFile=(req, res, next)=>{
         throw error;
     }
     const textUrl=req.file.path
+    const startTime = performance.now();
     Textanalyzestatics(textUrl, (err, statistics) => {
         if (err) {
             console.error(err);
@@ -50,27 +54,14 @@ exports.createNewFile=(req, res, next)=>{
             next(err);
         });
     });    
+    const endTime = performance.now();
+    // Calculate the elapsed time
+    const elapsedTime = endTime - startTime;
+
+    console.log(`Time taken by myFunction: ${elapsedTime} milliseconds`);
 }
 
-exports.getFile = (req, res, next) => {
-    const fileId = req.params.fileId;
-    Textfile.findById(fileId)
-        .then(file => {
-        if (!file) {
-            const error = new Error('Could not find files.');
-            error.statusCode = 404;
-            throw error;
-        }
-        res.status(200).json({ message: 'Text file fetched.', file: file });
-        })
-        .catch(err => {
-        if (!err.statusCode) {
-            err.statusCode = 500;
-        }
-        next(err);
-    });
-};
-
+// Words counter controller
 exports.getWords = (req, res, next) => {
     const fileId = req.params.fileId;
     Textfile.findById(fileId)
@@ -89,6 +80,8 @@ exports.getWords = (req, res, next) => {
         next(err);
     });
 };
+
+// Characters counter controller
 exports.getCharacters = (req, res, next) => {
     const fileId = req.params.fileId;
     Textfile.findById(fileId)
@@ -107,6 +100,8 @@ exports.getCharacters = (req, res, next) => {
         next(err);
     });
 };
+
+// Sentences counter controller
 exports.getSentences = (req, res, next) => {
     const fileId = req.params.fileId;
     Textfile.findById(fileId)
@@ -125,6 +120,8 @@ exports.getSentences = (req, res, next) => {
         next(err);
     });
 };
+
+// Paragraphs counter controller
 exports.getParagraphs = (req, res, next) => {
     const fileId = req.params.fileId;
     Textfile.findById(fileId)
@@ -143,6 +140,8 @@ exports.getParagraphs = (req, res, next) => {
         next(err);
     });
 };
+
+// Getting longest paragraph controller
 exports.getLongestparagraphs = (req, res, next) => {
     const fileId = req.params.fileId;
     Textfile.findById(fileId)
@@ -161,6 +160,8 @@ exports.getLongestparagraphs = (req, res, next) => {
         next(err);
     });
 };
+
+// File delete controller
 exports.deleteFile=(req, res, next)=>{
     const fileId=req.params.fileId;
     Textfile.findById(fileId)

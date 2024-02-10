@@ -28,11 +28,7 @@ const fileSchema=new Schema({
     }
 }, {timestamps: true});
 
+// Sort file in descending order by creation date and time
+fileSchema.index({ createdAt: -1 });
+
 module.exports = mongoose.model('Textfile', fileSchema)
-
-
-// - Create an API to return the number of words.
-// - Create an API to return the number of characters.
-// - Create an API to return the number of sentences.
-// - Create an API to return the number of paragraphs.
-// - Create an API to return the longest words in paragraphs.

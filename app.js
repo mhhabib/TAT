@@ -8,10 +8,7 @@ const app = express();
 const rootDir = require("./Utils/path")
 const feedRoutes=require('./routes/feedRoutes')
 
-
-app.set("view engine", "ejs");
-app.set("views", "views");
-
+// Multer file upload handler
 const fileStorage = multer.diskStorage({
     destination: (req, file, cb) => {
       cb(null, 'textfiles');
@@ -19,23 +16,21 @@ const fileStorage = multer.diskStorage({
     filename: (req, file, cb) => {
       cb(null, new Date().toISOString() + '-' + file.originalname);
     }
-  });
+});
   
-  const fileFilter = (req, file, cb) => {
+const fileFilter = (req, file, cb) => {
     if (file.mimetype === 'text/plain') {
         cb(null, true); // Allow upload for text/plain MIME type
     } else {
         cb(null, false); // Reject upload for other MIME types
     }
-  };
-app.use(bodyParser.json());
-app.use(
-    multer({ storage: fileStorage, fileFilter: fileFilter }).single('file')
-);
-app.use('/textfiles', express.static(path.join(__dirname, 'textfiles')));
-  
-app.use(express.static(path.join(rootDir, "public")));
+};
 
+app.use(bodyParser.json());
+app.use(multer({ storage: fileStorage, fileFilter: fileFilter }).single('file'));
+app.use('/textfiles', express.static(path.join(__dirname, 'textfiles')));
+
+// Implement cors policy
 app.use((req, res, next)=>{
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'OPTIONS, GET, POST, PUT, PATCH, DELETE');
@@ -43,6 +38,7 @@ app.use((req, res, next)=>{
     next();
 });
 
+// Routing handler
 app.use(feedRoutes)
 
 app.use((error, req, res, next) => {
@@ -52,6 +48,8 @@ app.use((error, req, res, next) => {
     res.status(status).json({ message: message });
   });
   
+
+// DB connection and port controller
 mongoose.connect(process.env.MONGODB_URI)
     .then(result => {
         app.listen(process.env.PORT);
