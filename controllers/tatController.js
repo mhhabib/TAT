@@ -54,8 +54,9 @@ exports.getFiles = async (req, res, next) => {
     }
     logger.info(`Fetching all published files API time: ${performance.now() - startTime} milliseconds`);
 };
+
 // Creating new file and text analyze controller
-exports.createNewFile=(req, res, next)=>{
+exports.createNewFile = (req, res, next)=>{
     // Performance time calcultions
     const startTime = performance.now();
 
@@ -67,7 +68,7 @@ exports.createNewFile=(req, res, next)=>{
     }
     const textUrl=req.file.path
     logger.info("Analyzing imported text file....")
-    processFile(textUrl, (err, statistics) => {
+    processFile(textUrl, async (err, statistics) => {
         if (err) {
             logger.error(`File processing went wrong: ${err}`);
             return next(err);
@@ -80,14 +81,27 @@ exports.createNewFile=(req, res, next)=>{
             paragraphs: statistics?.paragraphCount?.toString(),
             longestparagraphs: statistics?.longestWord
         });
-        textfile
+        await textfile
         .save()
-        .then(result => {
+        .then(async result => {
           res.status(201).json({
             message: 'New file created successfully!',
             textfile: result
           });
-          logger.info("Successfully created new file and stored to database")
+            try {
+                const cachedData = await redisClient.get('getalltextfiles');
+                if (cachedData) {
+                    const parsedData = JSON.parse(cachedData);
+                    parsedData.push(result); 
+                    await redisClient.setEx('getalltextfiles', REDIS_TIME_EXPIRATION, JSON.stringify(parsedData));
+                } else {
+                    await redisClient.setEx('getalltextfiles', REDIS_TIME_EXPIRATION, JSON.stringify([result]));
+                }
+                logger.info('Cache updated successfully');
+            } catch (err) {
+                logger.error(`Error updating cache: ${err}`);
+            }
+            logger.info("Successfully created new file and stored to database")
         })
         .catch(err => {
             if (!err.statusCode) {
@@ -102,145 +116,218 @@ exports.createNewFile=(req, res, next)=>{
 }
 
 // Words counter controller
-exports.getWords = (req, res, next) => {
+exports.getWords = async (req, res, next) => {
     // Performance time calcultions
     const startTime = performance.now();
-
     const fileId = req.params.fileId;
-    Textfile.findById(fileId)
-        .then(file => {
+    const cacheKey= `getwords${fileId}`
+    try{
+        const cachedData = await redisClient.get(cacheKey);
+        if (cachedData) {
+            logger.info('Fetching words data from cache');
+            logger.info(JSON.parse(cachedData))
+            res.status(200).json(JSON.parse(cachedData));
+            logger.info(`Fetching words count API time: ${performance.now()-startTime} milliseconds`);
+            return;
+        }
+    } catch (err) {
+        logger.error(`Redis words cache error: ${err}`);
+    }
+    
+    try {
+        const file = await Textfile.findById(fileId);
         if (!file) {
             logger.error(`Could not find file with ID: ${fileId.toString()}. File not found.`);
             const error = new Error('Could not find files.');
             error.statusCode = 404;
             throw error;
         }
+        // Store the fetched data in the cache
+        await redisClient.setEx(cacheKey, REDIS_TIME_EXPIRATION, JSON.stringify(file.words) );
         logger.info(`Fetching words id: ${fileId.toString()}.`);
         res.status(200).json({ message: 'Number of words fetched', words: file.words });
         logger.info("Fetching words successfull!");
-        })
-        .catch(err => {
+        logger.info(`Fetching words count API time: ${performance.now()-startTime} milliseconds`);
+
+    } catch (err) {
         if (!err.statusCode) {
             err.statusCode = 500;
-            logger.error(err)
         }
+        logger.error(err);
         next(err);
-    });
-    logger.info(`Fetching words count API time: ${performance.now()-startTime} milliseconds`);
+    } 
 };
 
 // Characters counter controller
-exports.getCharacters = (req, res, next) => {
+exports.getCharacters = async (req, res, next) => {
     // Performance time calcultions
     const startTime = performance.now();
-
     const fileId = req.params.fileId;
-    Textfile.findById(fileId)
-        .then(file => {
+    const cacheKey= `getchars${fileId}`
+    try{
+        const cachedData = await redisClient.get(cacheKey);
+        if (cachedData) {
+            logger.info('Fetching Characters data from cache');
+            logger.info(JSON.parse(cachedData))
+            res.status(200).json(JSON.parse(cachedData));
+            logger.info(`Fetching Characters count API time: ${performance.now()-startTime} milliseconds`);
+            return;
+        }
+    } catch (err) {
+        logger.error(`Redis Characters cache error: ${err}`);
+    }
+    
+    try {
+        const file = await Textfile.findById(fileId);
         if (!file) {
             logger.error(`Could not find file with ID: ${fileId.toString()}. File not found.`);
             const error = new Error('Could not find files.');
             error.statusCode = 404;
             throw error;
         }
-        logger.info(`Fetching characters id: ${fileId.toString()}.`);
-        res.status(200).json({ message: 'Number of characters fetched', characters: file.characters });
-        logger.info("Fetching characters successfull!");
-        })
-        .catch(err => {
+        // Store the fetched data in the cache
+        await redisClient.setEx(cacheKey, REDIS_TIME_EXPIRATION, JSON.stringify(file.characters) );
+        logger.info(`Fetching Characters id: ${fileId.toString()}.`);
+        res.status(200).json({ message: 'Number of words fetched', characters: file.characters });
+        logger.info("Fetching Characters successfull!");
+        logger.info(`Fetching Characters count API time: ${performance.now()-startTime} milliseconds`);
+
+    } catch (err) {
         if (!err.statusCode) {
             err.statusCode = 500;
-            logger.error(err)
         }
+        logger.error(err);
         next(err);
-    });
-    logger.info(`Fetching characters count API time: ${performance.now()-startTime} milliseconds`);
+    } 
 };
 
 // Sentences counter controller
-exports.getSentences = (req, res, next) => {
+exports.getSentences = async (req, res, next) => {
     // Performance time calcultions
     const startTime = performance.now();
-
     const fileId = req.params.fileId;
-    Textfile.findById(fileId)
-        .then(file => {
+    const cacheKey= `getsentence${fileId}`
+    try{
+        const cachedData = await redisClient.get(cacheKey);
+        if (cachedData) {
+            logger.info('Fetching sentences data from cache');
+            logger.info(JSON.parse(cachedData))
+            res.status(200).json(JSON.parse(cachedData));
+            logger.info(`Fetching sentences count API time: ${performance.now()-startTime} milliseconds`);
+            return;
+        }
+    } catch (err) {
+        logger.error(`Redis sentences cache error: ${err}`);
+    }
+    
+    try {
+        const file = await Textfile.findById(fileId);
         if (!file) {
             logger.error(`Could not find file with ID: ${fileId.toString()}. File not found.`);
             const error = new Error('Could not find files.');
             error.statusCode = 404;
             throw error;
         }
+        // Store the fetched data in the cache
+        await redisClient.setEx(cacheKey, REDIS_TIME_EXPIRATION, JSON.stringify(file.sentences) );
         logger.info(`Fetching sentences id: ${fileId.toString()}.`);
-        res.status(200).json({ message: 'Number of sentences fetched', sentences: file.sentences });
+        res.status(200).json({ message: 'Number of words fetched', sentences: file.sentences });
         logger.info("Fetching sentences successfull!");
-        })
-        .catch(err => {
+        logger.info(`Fetching sentences count API time: ${performance.now()-startTime} milliseconds`);
+
+    } catch (err) {
         if (!err.statusCode) {
             err.statusCode = 500;
-            logger.error(err)
         }
+        logger.error(err);
         next(err);
-    });
-    logger.info(`Fetching sentences count API time: ${performance.now()-startTime} milliseconds`);
+    } 
 };
 
 // Paragraphs counter controller
-exports.getParagraphs = (req, res, next) => {
+exports.getParagraphs = async (req, res, next) => {
     // Performance time calcultions
     const startTime = performance.now();
-
     const fileId = req.params.fileId;
-    Textfile.findById(fileId)
-        .then(file => {
+    const cacheKey= `getparagraph${fileId}`
+    try{
+        const cachedData = await redisClient.get(cacheKey);
+        if (cachedData) {
+            logger.info('Fetching paragraphs data from cache');
+            logger.info(JSON.parse(cachedData))
+            res.status(200).json(JSON.parse(cachedData));
+            logger.info(`Fetching paragraphs count API time: ${performance.now()-startTime} milliseconds`);
+            return;
+        }
+    } catch (err) {
+        logger.error(`Redis paragraphs cache error: ${err}`);
+    }
+    
+    try {
+        const file = await Textfile.findById(fileId);
         if (!file) {
             logger.error(`Could not find file with ID: ${fileId.toString()}. File not found.`);
             const error = new Error('Could not find files.');
             error.statusCode = 404;
             throw error;
         }
+        // Store the fetched data in the cache
+        await redisClient.setEx(cacheKey, REDIS_TIME_EXPIRATION, JSON.stringify(file.paragraphs) );
         logger.info(`Fetching paragraphs id: ${fileId.toString()}.`);
-        res.status(200).json({ message: 'Number of paragraphs fetched', paragraphs: file.paragraphs });
+        res.status(200).json({ message: 'Number of words fetched', paragraphs: file.paragraphs });
         logger.info("Fetching paragraphs successfull!");
-        })
-        .catch(err => {
+        logger.info(`Fetching paragraphs count API time: ${performance.now()-startTime} milliseconds`);
+
+    } catch (err) {
         if (!err.statusCode) {
             err.statusCode = 500;
-            logger.error(err)
         }
+        logger.error(err);
         next(err);
-    });
-    logger.info(`Fetching paragraphs count API time: ${performance.now()-startTime} milliseconds`);
+    } 
 };
 
 // Getting longest words controller
-exports.getLongestwords = (req, res, next) => {
+exports.getLongestwords = async (req, res, next) => {
     // Performance time calcultions
     const startTime = performance.now();
-
     const fileId = req.params.fileId;
-    Textfile.findById(fileId)
-        .then(file => {
+    const cacheKey= `getlongestword${fileId}`
+    try{
+        const cachedData = await redisClient.get(cacheKey);
+        if (cachedData) {
+            logger.info('Fetching longest words data from cache');
+            logger.info(JSON.parse(cachedData))
+            res.status(200).json(JSON.parse(cachedData));
+            logger.info(`Fetching longest words count API time: ${performance.now()-startTime} milliseconds`);
+            return;
+        }
+    } catch (err) {
+        logger.error(`Redis longest words cache error: ${err}`);
+    }
+    
+    try {
+        const file = await Textfile.findById(fileId);
         if (!file) {
             logger.error(`Could not find file with ID: ${fileId.toString()}. File not found.`);
             const error = new Error('Could not find files.');
             error.statusCode = 404;
             throw error;
         }
-        
+        // Store the fetched data in the cache
+        await redisClient.setEx(cacheKey, REDIS_TIME_EXPIRATION, JSON.stringify(file.longestparagraphs) );
         logger.info(`Fetching longest words id: ${fileId.toString()}.`);
-        res.status(200).json({ message: 'Longest words fetched', longestparagraphs: file.longestparagraphs });
+        res.status(200).json({ message: 'Number of words fetched', longestparagraphs: file.longestparagraphs });
         logger.info("Fetching longest words successfull!");
+        logger.info(`Fetching longest words count API time: ${performance.now()-startTime} milliseconds`);
 
-        })
-        .catch(err => {
+    } catch (err) {
         if (!err.statusCode) {
             err.statusCode = 500;
-            logger.error(err)
         }
+        logger.error(err);
         next(err);
-    });
-    logger.info(`Fetching longest words API time: ${performance.now()-startTime} milliseconds`);
+    } 
 };
 
 // File delete controller
@@ -259,10 +346,26 @@ exports.deleteFile=(req, res, next)=>{
         }
         return Textfile.findByIdAndDelete(fileId);
       })
-      .then(result => {
+      .then(async result => {
         logger.info(`Deleted file id: ${fileId.toString()}.`);
-        res.status(200).json({ message: 'Deleted post.' });
-        logger.info("File deleted successfully!");
+        logger.info("File deleted from database successfully!");
+
+        const cachedData = await redisClient.get('getalltextfiles');
+        const cachedTextfiles = JSON.parse(cachedData);
+        logger.info(`XYZ DATA : ${cachedTextfiles}`)
+        try {
+            // ... (cache modification code from above)
+            const updatedTextfiles = cachedTextfiles.filter(file => file._id !== fileId); // Remove deleted file
+            await redisClient.setEx('getalltextfiles', REDIS_TIME_EXPIRATION, JSON.stringify(updatedTextfiles));
+            logger.info(`XYZ after delete DATA : ${updatedTextfiles}`)
+            logger.info(`Deleted file id: ${fileId.toString()} from database and cache.`);
+            res.status(200).json({ message: 'Deleted post.' });
+        } catch (err) {
+            logger.error(`Redis delete cache error: ${err}`);
+        } finally {
+            logger.info("File deleted from cache successfully!");
+        }
+
       })
       .catch(err => {
         if (!err.statusCode) {

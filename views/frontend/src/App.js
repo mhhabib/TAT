@@ -99,10 +99,10 @@ const App=()=>{
                 }
             );
             const data = await response.json();
-            console.log("Details data: ", data)
+            console.log(data)
             if(response.status===200){
-               console.log("Words data fetching succesfull!")
-               setWords(data.words)
+               if(data.words) setWords(data.words)
+               else setWords(data)
                setcCharacters(null)
                setParagraphs(null)
                setSentences(null)
@@ -126,8 +126,8 @@ const App=()=>{
             );
             const data = await response.json();
             if(response.status===200){
-               console.log("Characters data fetching succesfull!")
-               setcCharacters(data.characters)
+               if(data.characters) setcCharacters(data.characters)
+               else setcCharacters(data)
                setWords(null)
                setParagraphs(null)
                setSentences(null)
@@ -151,8 +151,8 @@ const App=()=>{
             );
             const data = await response.json();
             if(response.status===200){
-               console.log("Sentences data fetching succesfull!")
-               setSentences(data.sentences)
+                if(data.sentences) setSentences(data.sentences)
+                else setSentences(data)
                setcCharacters(null)
                setParagraphs(null)
                setWords(null)
@@ -176,8 +176,8 @@ const App=()=>{
             );
             const data = await response.json();
             if(response.status===200){
-               console.log("Paragraphs data fetching succesfull!")
-               setParagraphs(data.paragraphs)
+                if(data.paragraphs) setParagraphs(data.paragraphs)
+                else setParagraphs(data)
                setcCharacters(null)
                setWords(null)
                setSentences(null)
@@ -201,9 +201,8 @@ const App=()=>{
             );
             const data = await response.json();
             if(response.status===200){
-               console.log("Longest paragraphs data fetching succesfull!")
-                console.log(data)
-               setLongestparagraphs(data.longestparagraphs)
+               if(data.longestparagraphs) setLongestparagraphs(data.longestparagraphs)
+               else setLongestparagraphs(data)
                setcCharacters(null)
                setParagraphs(null)
                setSentences(null)
@@ -226,44 +225,44 @@ const App=()=>{
         <div className="bg-[#232425] w-full min-h-screen flex flex-col items-center justify-center p-8">
             <div className=" w-[60%] text-[#a9a9b3]">
                 <form>
-                    <div class="flex items-center space-x-4">
-                        <input type="file" class="border w-full rounded-md px-4" onChange={(e) => setFile(e.target.files[0])}/>
-                        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded cursor-progress" onClick={handleSubmit}>
+                    <div className="flex items-center space-x-4">
+                        <input type="file" className="border w-full rounded-md px-4" onChange={(e) => setFile(e.target.files[0])}/>
+                        <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded cursor-progress" onClick={handleSubmit}>
                             Submit
                         </button>
                     </div>
                 </form>
-                {isDatafetching && <div class="mt-10 flex items-center space-x-4">
+                {isDatafetching && <div className="mt-10 flex items-center space-x-4">
                     <h1 className="text-center font-semibold text-teal-600">Data fetching ....</h1>
                  </div>}
 
                  {message==="deleted" && 
-                    <div class="mt-5 flex items-center p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-400 dark:bg-gray-800 dark:text-red-400" role="alert">
-                        <svg class="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <div className="mt-5 flex items-center p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-400 dark:bg-gray-800 dark:text-red-400" role="alert">
+                        <svg className="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
                         </svg>
-                        <span class="sr-only">Info</span>
+                        <span className="sr-only">Info</span>
                         <div>
-                            <span class="font-medium">Danger alert!</span> Text file successfully deleted!
+                            <span className="font-medium">Danger alert!</span> Text file successfully deleted!
                         </div>
                     </div>
                 }
                 { message === "created" &&
-                    <div class="mt-5 flex items-center p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
-                        <svg class="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <div className="mt-5 flex items-center p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
+                        <svg className="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
                         </svg>
-                        <span class="sr-only">Info</span>
+                        <span className="sr-only">Info</span>
                         <div>
-                            <span class="font-medium">Success alert!</span> Ssuccessfully created new file.
+                            <span className="font-medium">Success alert!</span> Ssuccessfully created new file.
                         </div>
                     </div>
                 }
                 {showfileinfo && 
-                    <div class="mt-10 relative flex items-center space-x-4 border border-gray-300 rounded-lg p-4">
-                        <button class="absolute top-[-10px] right-[-10px] p-1 bg-red-500 text-white rounded-full" onClick={showFileBox}>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 11.414l4.293-4.293a1 1 0 0 1 1.414 1.414L11.414 12l4.293 4.293a1 1 0 1 1-1.414 1.414L10 13.414l-4.293 4.293a1 1 0 1 1-1.414-1.414L8.586 12 4.293 7.707a1 1 0 1 1 1.414-1.414L10 10.586l4.293-4.293a1 1 0 1 1 1.414 1.414L11.414 12z" clip-rule="evenodd" />
+                    <div className="mt-10 relative flex items-center space-x-4 border border-gray-300 rounded-lg p-4">
+                        <button className="absolute top-[-10px] right-[-10px] p-1 bg-red-500 text-white rounded-full" onClick={showFileBox}>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fillRule="evenodd" d="M10 11.414l4.293-4.293a1 1 0 0 1 1.414 1.414L11.414 12l4.293 4.293a1 1 0 1 1-1.414 1.414L10 13.414l-4.293 4.293a1 1 0 1 1-1.414-1.414L8.586 12 4.293 7.707a1 1 0 1 1 1.414-1.414L10 10.586l4.293-4.293a1 1 0 1 1 1.414 1.414L11.414 12z" clipRule="evenodd" />
                             </svg>
                         </button>
                         <ul>
