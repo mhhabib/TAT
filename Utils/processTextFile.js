@@ -42,6 +42,8 @@ function processFile(filePath, callback) {
         // Increment paragraph count if the last line is not empty
         if (charCount > 0) {
             paragraphCount++;
+            if(!sentenceCount) sentenceCount++;
+            if(!wordCount) wordCount++;
         }
 
         const analysisResult = {
