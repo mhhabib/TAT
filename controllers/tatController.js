@@ -5,6 +5,9 @@ const logger = require("../logger/Logger");
 
 // Fetching all created files controller
 exports.getFiles = (req, res, next) => {
+    // Performance time calcultions
+    const startTime = performance.now();
+
     Textfile.find()
         .then(textfiles => {
             logger.info("Fetching all published file");
@@ -17,11 +20,15 @@ exports.getFiles = (req, res, next) => {
                 logger.error(err)
             }
             next(err);
-        });
+    });
+    logger.info(`Fetching all published files API time: ${performance.now()-startTime} milliseconds`);
 };
 
 // Creating new file and text analyze controller
 exports.createNewFile=(req, res, next)=>{
+    // Performance time calcultions
+    const startTime = performance.now();
+
     if(!req.file){
         logger.error("No text file provided")
         const error = new Error("No text file provided!");
@@ -29,7 +36,6 @@ exports.createNewFile=(req, res, next)=>{
         throw error;
     }
     const textUrl=req.file.path
-    const startTime = performance.now();
     logger.info("Analyzing imported text file....")
     Textanalyzestatics(textUrl, (err, statistics) => {
         if (err) {
@@ -62,11 +68,14 @@ exports.createNewFile=(req, res, next)=>{
         });
     });   
     logger.info("New text analyzing is sucessfull!") 
-    logger.info(`New file creation time: ${performance.now()-startTime} milliseconds`);
+    logger.info(`New file creation API time: ${performance.now()-startTime} milliseconds`);
 }
 
 // Words counter controller
 exports.getWords = (req, res, next) => {
+    // Performance time calcultions
+    const startTime = performance.now();
+
     const fileId = req.params.fileId;
     Textfile.findById(fileId)
         .then(file => {
@@ -87,10 +96,14 @@ exports.getWords = (req, res, next) => {
         }
         next(err);
     });
+    logger.info(`Fetching words count API time: ${performance.now()-startTime} milliseconds`);
 };
 
 // Characters counter controller
 exports.getCharacters = (req, res, next) => {
+    // Performance time calcultions
+    const startTime = performance.now();
+
     const fileId = req.params.fileId;
     Textfile.findById(fileId)
         .then(file => {
@@ -111,10 +124,14 @@ exports.getCharacters = (req, res, next) => {
         }
         next(err);
     });
+    logger.info(`Fetching characters count API time: ${performance.now()-startTime} milliseconds`);
 };
 
 // Sentences counter controller
 exports.getSentences = (req, res, next) => {
+    // Performance time calcultions
+    const startTime = performance.now();
+
     const fileId = req.params.fileId;
     Textfile.findById(fileId)
         .then(file => {
@@ -135,10 +152,14 @@ exports.getSentences = (req, res, next) => {
         }
         next(err);
     });
+    logger.info(`Fetching sentences count API time: ${performance.now()-startTime} milliseconds`);
 };
 
 // Paragraphs counter controller
 exports.getParagraphs = (req, res, next) => {
+    // Performance time calcultions
+    const startTime = performance.now();
+
     const fileId = req.params.fileId;
     Textfile.findById(fileId)
         .then(file => {
@@ -159,10 +180,14 @@ exports.getParagraphs = (req, res, next) => {
         }
         next(err);
     });
+    logger.info(`Fetching paragraphs count API time: ${performance.now()-startTime} milliseconds`);
 };
 
 // Getting longest paragraph controller
 exports.getLongestparagraphs = (req, res, next) => {
+    // Performance time calcultions
+    const startTime = performance.now();
+
     const fileId = req.params.fileId;
     Textfile.findById(fileId)
         .then(file => {
@@ -185,10 +210,14 @@ exports.getLongestparagraphs = (req, res, next) => {
         }
         next(err);
     });
+    logger.info(`Fetching longest paragraphs API time: ${performance.now()-startTime} milliseconds`);
 };
 
 // File delete controller
 exports.deleteFile=(req, res, next)=>{
+    // Performance time calcultions
+    const startTime = performance.now();
+
     const fileId=req.params.fileId;
     Textfile.findById(fileId)
     .then(file => {
@@ -212,4 +241,5 @@ exports.deleteFile=(req, res, next)=>{
         }
         next(err);
     });
+    logger.info(`Deleting file API time: ${performance.now()-startTime} milliseconds`);
 }
