@@ -15,9 +15,6 @@ exports.ProducttionLoggerConfig = ()=>{
         ),
         defaultMeta: { service: 'api-service' },
         transports: [
-          new transports.Console(),
-          new transports.File({ filename: './Logs/error.log', level: 'error' }),
-          new transports.File({ filename: '.Logs/combined.log' }),
           new LogtailTransport(logtail)
         ],
       });
