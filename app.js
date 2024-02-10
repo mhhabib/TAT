@@ -5,8 +5,8 @@ const express = require('express');
 const mongoose = require('mongoose')
 const multer = require('multer')
 const app = express();
-const rootDir = require("./Utils/path")
 const feedRoutes=require('./routes/feedRoutes')
+const logger = require("./logger/Logger")
 
 // Multer file upload handler
 const fileStorage = multer.diskStorage({
@@ -53,6 +53,6 @@ app.use((error, req, res, next) => {
 mongoose.connect(process.env.MONGODB_URI)
     .then(result => {
         app.listen(process.env.PORT);
-        console.log("Database connection succesfull and port is running...")
+        logger.info("Database connection succesfull and port is running...")
     })
-    .catch(err => console.log("port is not running"));
+    .catch(err => logger.error("port is not running"));
