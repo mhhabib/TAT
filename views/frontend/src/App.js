@@ -186,7 +186,7 @@ const App=()=>{
     const longestparagraphsHandler = async(e, fId)=>{
         e.preventDefault();
         try {
-            const response = await fetch(`http://localhost:8080/longest-paragraphs/${fId}/`,
+            const response = await fetch(`http://localhost:8080/longest-words/${fId}/`,
                 {
                     method: "GET",
                     headers: {

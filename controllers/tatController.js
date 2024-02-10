@@ -183,8 +183,8 @@ exports.getParagraphs = (req, res, next) => {
     logger.info(`Fetching paragraphs count API time: ${performance.now()-startTime} milliseconds`);
 };
 
-// Getting longest paragraph controller
-exports.getLongestparagraphs = (req, res, next) => {
+// Getting longest words controller
+exports.getLongestwords = (req, res, next) => {
     // Performance time calcultions
     const startTime = performance.now();
 
@@ -198,9 +198,9 @@ exports.getLongestparagraphs = (req, res, next) => {
             throw error;
         }
         
-        logger.info(`Fetching longest paragraphs id: ${fileId.toString()}.`);
-        res.status(200).json({ message: 'Longest paragraphs fetched', longestparagraphs: file.longestparagraphs });
-        logger.info("Fetching longest paragraphs successfull!");
+        logger.info(`Fetching longest words id: ${fileId.toString()}.`);
+        res.status(200).json({ message: 'Longest words fetched', longestparagraphs: file.longestparagraphs });
+        logger.info("Fetching longest words successfull!");
 
         })
         .catch(err => {
@@ -210,7 +210,7 @@ exports.getLongestparagraphs = (req, res, next) => {
         }
         next(err);
     });
-    logger.info(`Fetching longest paragraphs API time: ${performance.now()-startTime} milliseconds`);
+    logger.info(`Fetching longest words API time: ${performance.now()-startTime} milliseconds`);
 };
 
 // File delete controller

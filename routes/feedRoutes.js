@@ -20,8 +20,8 @@ router.get('/sentences/:fileId',feedController.getSentences )
 // GET /number of paragraphs/:fileId
 router.get('/paragraphs/:fileId',feedController.getParagraphs )
 
-// GET /longest-paragraphs/:fileId
-router.get('/longest-paragraphs/:fileId',feedController.getLongestparagraphs )
+// GET /longest-words/:fileId
+router.get('/longest-words/:fileId',feedController.getLongestwords )
 
 // DELETE /file/:fileId
 router.delete('/file/:fileId',feedController.deleteFile )
