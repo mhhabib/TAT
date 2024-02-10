@@ -1,29 +1,59 @@
+require('dotenv').config();
 const Textfile = require("../models/tatModel")
 const processFile = require('../Utils/processTextFile')
 const { performance } = require('perf_hooks');
 const logger = require("../logger/Logger");
+const Redis = require('redis')
+
+const redisClient = Redis.createClient({
+    host: process.env.REDIS_HOST,
+    port: process.env.REDIS_PORT, 
+});
+
+(async () => {
+    try {
+        await redisClient.connect();
+        logger.info('Redis Client Connected');
+    } catch (err) {
+        logger.error(`Redis Client Connection Error ${err}`);
+    }
+})();
+
+const REDIS_TIME_EXPIRATION = process.env.REDIS_TIME_EXPIRATION
+
 
 // Fetching all created files controller
-exports.getFiles = (req, res, next) => {
-    // Performance time calcultions
+exports.getFiles = async (req, res, next) => {
+    // Performance time calculations
     const startTime = performance.now();
 
-    Textfile.find()
-        .then(textfiles => {
-            logger.info("Fetching all published file");
-            res.status(200).json({ message: 'Fetching all published file successfull!', textfiles: textfiles });
-            logger.info("Fetching all published file successfull!");
-        })
-        .catch(err => {
-            if (!err.statusCode) {
-                err.statusCode = 500;
-                logger.error(err)
-            }
-            next(err);
-    });
-    logger.info(`Fetching all published files API time: ${performance.now()-startTime} milliseconds`);
+    const cacheKey = 'getalltextfiles';
+    try {
+    const cachedData = await redisClient.get(cacheKey);
+    if (cachedData) {
+        logger.info('Fetching data from cache');
+        res.status(200).json(JSON.parse(cachedData));
+        logger.info(`Fetching all published files API time: ${performance.now() - startTime} milliseconds`);
+        return;
+    }
+    } catch (err) {
+        logger.error(`Redis cache error: ${err}`);
+    }
+    try {
+        const textfiles = await Textfile.find();
+        // Store the fetched data in the cache
+        await redisClient.setEx(cacheKey, REDIS_TIME_EXPIRATION, JSON.stringify(textfiles));
+        logger.info("Fetching all published files successful!");
+        res.status(200).json({ message: 'Fetching all published files successful!', textfiles });
+    } catch (err) {
+        if (!err.statusCode) {
+            err.statusCode = 500;
+        }
+        logger.error(err);
+        next(err);
+    }
+    logger.info(`Fetching all published files API time: ${performance.now() - startTime} milliseconds`);
 };
-
 // Creating new file and text analyze controller
 exports.createNewFile=(req, res, next)=>{
     // Performance time calcultions

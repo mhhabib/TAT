@@ -29,8 +29,13 @@ const App=()=>{
         });
         const data = await response.json();
         if (response.status === 200) {
-            setPostfiles(data.textfiles);
-            console.log(data.textfiles)
+            if(data.textfiles){
+                setPostfiles(data.textfiles);
+            }
+            else{
+                setPostfiles(data);
+            }
+            // console.log(data.textfiles)
             setIsDatafetching(false)
             
         }
