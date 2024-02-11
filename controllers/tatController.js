@@ -354,10 +354,8 @@ exports.deleteFile=(req, res, next)=>{
         const cachedTextfiles = JSON.parse(cachedData);
         logger.info(`XYZ DATA : ${cachedTextfiles}`)
         try {
-            // ... (cache modification code from above)
             const updatedTextfiles = cachedTextfiles.filter(file => file._id !== fileId); // Remove deleted file
             await redisClient.setEx('getalltextfiles', REDIS_TIME_EXPIRATION, JSON.stringify(updatedTextfiles));
-            logger.info(`XYZ after delete DATA : ${updatedTextfiles}`)
             logger.info(`Deleted file id: ${fileId.toString()} from database and cache.`);
             res.status(200).json({ message: 'Deleted post.' });
         } catch (err) {
