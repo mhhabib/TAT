@@ -1,5 +1,5 @@
-# Text Analyser Tool 
-Text Analyser Tool is a Node.js application that provides RESTful APIs for performing various analyses on text files. It is designed to handle large files efficiently, avoiding resource-intensive methods like built-in JavaScript split functions. It employs various technologies for efficient performance like caching, logging, and leveraging MongoDB for persistence
+# Text Analyzer Tool 
+Text Analyzer Tool is a Node.js application that provides RESTful APIs for performing various analyses on text files. It is designed to handle large files efficiently, avoiding resource-intensive methods like built-in JavaScript split functions. It employs various technologies for efficient performance like caching, logging, and leveraging MongoDB for persistence
 
 ## Features
 
