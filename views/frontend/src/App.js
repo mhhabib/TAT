@@ -1,6 +1,5 @@
 import './App.css';
-import React from 'react';
-import { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import axios from "axios";
 
 const App=()=>{
@@ -14,6 +13,7 @@ const App=()=>{
     const [showfileinfo, setShowfileinfo]=useState(false)
     const [isDatafetching, setIsDatafetching]=useState(false)
     const [message, setMessage] = useState("")
+    const fileRef=useRef(null);
 
     useEffect(() => {
         controlData()
@@ -44,6 +44,13 @@ const App=()=>{
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsDatafetching(true)
+
+        if (!file) {
+            console.warn('No file selected');
+            setIsDatafetching(false);
+            return; 
+        }
+
         const formData = new FormData();
         formData.append("file", file);
         try {
@@ -59,6 +66,9 @@ const App=()=>{
             
             if (response?.status === 201) {
                 setFile(null);
+                console.log("File refs: ", fileRef.current)
+                fileRef.current.value=null
+                console.log("File refs: ", fileRef.current)
                 controlData()
                 setIsDatafetching(false)
 
@@ -226,7 +236,7 @@ const App=()=>{
             <div className=" w-[60%] text-[#a9a9b3]">
                 <form>
                     <div className="flex items-center space-x-4">
-                        <input type="file" className="border w-full rounded-md px-4" onChange={(e) => setFile(e.target.files[0])}/>
+                        <input ref={fileRef} type="file" className="border w-full rounded-md px-4" onChange={(e) => setFile(e.target.files[0])}/>
                         <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded cursor-progress" onClick={handleSubmit}>
                             Submit
                         </button>
